@@ -1,0 +1,2002 @@
+Program.Sub.ScreenSU.Start
+
+Gui.F_Tool_Type_Maint..Create
+Gui.F_Tool_Type_Maint..Caption("Tool Type Maintenance")
+Gui.F_Tool_Type_Maint..Size(6600,6500)
+Gui.F_Tool_Type_Maint..Position(0,0)
+Gui.F_Tool_Type_Maint..AlwaysOnTop(False)
+Gui.F_Tool_Type_Maint..FontName("Arial")
+Gui.F_Tool_Type_Maint..FontSize(8)
+Gui.F_Tool_Type_Maint..ForeColor(0)
+Gui.F_Tool_Type_Maint..Backcolor(-2147483633)
+Gui.F_Tool_Type_Maint..ControlBox(True)
+Gui.F_Tool_Type_Maint..MaxButton(True)
+Gui.F_Tool_Type_Maint..MinButton(True)
+Gui.F_Tool_Type_Maint..MousePointer(0)
+Gui.F_Tool_Type_Maint..Moveable(True)
+Gui.F_Tool_Type_Maint..Sizeable(True)
+Gui.F_Tool_Type_Maint..ShowInTaskBar(True)
+Gui.F_Tool_Type_Maint..TitleBar(True)
+
+Gui.F_Tool_Type_Maint..Event(resize,f_tool_type_maint_resize)
+Gui.F_Tool_Type_Maint..Event(unload,f_tool_type_maint_unload)
+
+Gui.F_Tool_Type_Maint.txtID.Create(textbox)
+Gui.F_Tool_Type_Maint.txtID.Text("")
+Gui.F_Tool_Type_Maint.txtID.Visible(True)
+Gui.F_Tool_Type_Maint.txtID.Size(1000,300)
+Gui.F_Tool_Type_Maint.txtID.Zorder(0)
+Gui.F_Tool_Type_Maint.txtID.Position(200,400)
+Gui.F_Tool_Type_Maint.txtID.Enabled(False)
+Gui.F_Tool_Type_Maint.txtID.Alignment(0)
+Gui.F_Tool_Type_Maint.txtID.FontName("Arial")
+Gui.F_Tool_Type_Maint.txtID.FontSize(8)
+Gui.F_Tool_Type_Maint.txtID.Backcolor(-2147483643)
+Gui.F_Tool_Type_Maint.txtID.BorderStyle(1)
+Gui.F_Tool_Type_Maint.txtID.TabStop(True)
+Gui.F_Tool_Type_Maint.txtID.TabIndex(0)
+Gui.F_Tool_Type_Maint.txtID.Tooltip("")
+Gui.F_Tool_Type_Maint.txtID.ControlGroup(0)
+Gui.F_Tool_Type_Maint.txtID.DefaultValue("")
+
+
+Gui.F_Tool_Type_Maint.lbl1.Create(label)
+Gui.F_Tool_Type_Maint.lbl1.Caption("Tool Type ID")
+Gui.F_Tool_Type_Maint.lbl1.Visible(True)
+Gui.F_Tool_Type_Maint.lbl1.Size(1935,255)
+Gui.F_Tool_Type_Maint.lbl1.Zorder(1)
+Gui.F_Tool_Type_Maint.lbl1.Position(200,200)
+Gui.F_Tool_Type_Maint.lbl1.Enabled(True)
+Gui.F_Tool_Type_Maint.lbl1.Alignment(0)
+Gui.F_Tool_Type_Maint.lbl1.FontName("Arial")
+Gui.F_Tool_Type_Maint.lbl1.FontSize(8)
+Gui.F_Tool_Type_Maint.lbl1.Backcolor(-2147483633)
+Gui.F_Tool_Type_Maint.lbl1.BackStyle(0)
+Gui.F_Tool_Type_Maint.lbl1.Tooltip("")
+Gui.F_Tool_Type_Maint.lbl1.ControlGroup(0)
+
+
+Gui.F_Tool_Type_Maint.lbl2.Create(label)
+Gui.F_Tool_Type_Maint.lbl2.Caption("Tool Type Name")
+Gui.F_Tool_Type_Maint.lbl2.Visible(True)
+Gui.F_Tool_Type_Maint.lbl2.Size(1935,255)
+Gui.F_Tool_Type_Maint.lbl2.Zorder(1)
+Gui.F_Tool_Type_Maint.lbl2.Position(1300,200)
+Gui.F_Tool_Type_Maint.lbl2.Enabled(True)
+Gui.F_Tool_Type_Maint.lbl2.Alignment(0)
+Gui.F_Tool_Type_Maint.lbl2.FontName("Arial")
+Gui.F_Tool_Type_Maint.lbl2.FontSize(8)
+Gui.F_Tool_Type_Maint.lbl2.Backcolor(-2147483633)
+Gui.F_Tool_Type_Maint.lbl2.BackStyle(0)
+Gui.F_Tool_Type_Maint.lbl2.Tooltip("")
+Gui.F_Tool_Type_Maint.lbl2.ControlGroup(0)
+
+
+Gui.F_Tool_Type_Maint.txtName.Create(textbox)
+Gui.F_Tool_Type_Maint.txtName.Text("")
+Gui.F_Tool_Type_Maint.txtName.Visible(True)
+Gui.F_Tool_Type_Maint.txtName.Size(3400,300)
+Gui.F_Tool_Type_Maint.txtName.Zorder(0)
+Gui.F_Tool_Type_Maint.txtName.Position(1300,400)
+Gui.F_Tool_Type_Maint.txtName.Enabled(False)
+Gui.F_Tool_Type_Maint.txtName.Alignment(0)
+Gui.F_Tool_Type_Maint.txtName.FontName("Arial")
+Gui.F_Tool_Type_Maint.txtName.FontSize(8)
+Gui.F_Tool_Type_Maint.txtName.Backcolor(-2147483643)
+Gui.F_Tool_Type_Maint.txtName.BorderStyle(1)
+Gui.F_Tool_Type_Maint.txtName.MaxLength(50)
+Gui.F_Tool_Type_Maint.txtName.TabStop(True)
+Gui.F_Tool_Type_Maint.txtName.TabIndex(3)
+Gui.F_Tool_Type_Maint.txtName.Tooltip("")
+Gui.F_Tool_Type_Maint.txtName.ControlGroup(0)
+Gui.F_Tool_Type_Maint.txtName.DefaultValue("")
+
+
+Gui.F_Tool_Type_Maint.gsfgFields.Create(gsflexgrid)
+Gui.F_Tool_Type_Maint.gsfgFields.Visible(True)
+Gui.F_Tool_Type_Maint.gsfgFields.Size(5950,4500)
+Gui.F_Tool_Type_Maint.gsfgFields.Zorder(0)
+Gui.F_Tool_Type_Maint.gsfgFields.Position(200,800)
+Gui.F_Tool_Type_Maint.gsfgFields.Enabled(True)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedRows(0)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedCols(0)
+
+Gui.F_Tool_Type_Maint.gsfgFields.Event(commandclick,gsfgfields_commandclick)
+
+Gui.F_Tool_Type_Maint.cmdToolType.Create(button)
+Gui.F_Tool_Type_Maint.cmdToolType.Caption("^")
+Gui.F_Tool_Type_Maint.cmdToolType.Visible(True)
+Gui.F_Tool_Type_Maint.cmdToolType.Size(300,300)
+Gui.F_Tool_Type_Maint.cmdToolType.Zorder(0)
+Gui.F_Tool_Type_Maint.cmdToolType.Position(4800,400)
+Gui.F_Tool_Type_Maint.cmdToolType.Enabled(True)
+Gui.F_Tool_Type_Maint.cmdToolType.FontName("Arial")
+Gui.F_Tool_Type_Maint.cmdToolType.FontSize(8)
+Gui.F_Tool_Type_Maint.cmdToolType.TabStop(True)
+Gui.F_Tool_Type_Maint.cmdToolType.TabIndex(5)
+Gui.F_Tool_Type_Maint.cmdToolType.Tooltip("")
+Gui.F_Tool_Type_Maint.cmdToolType.ControlGroup(0)
+Gui.F_Tool_Type_Maint.cmdToolType.DefaultValue("")
+
+Gui.F_Tool_Type_Maint.cmdToolType.Event(click,cmdtooltype_click)
+
+Gui.F_Tool_Type_Maint.cmdDelete.Create(button)
+Gui.F_Tool_Type_Maint.cmdDelete.Caption("Delete")
+Gui.F_Tool_Type_Maint.cmdDelete.Visible(True)
+Gui.F_Tool_Type_Maint.cmdDelete.Size(900,400)
+Gui.F_Tool_Type_Maint.cmdDelete.Zorder(0)
+Gui.F_Tool_Type_Maint.cmdDelete.Position(200,5400)
+Gui.F_Tool_Type_Maint.cmdDelete.Enabled(True)
+Gui.F_Tool_Type_Maint.cmdDelete.FontName("Arial")
+Gui.F_Tool_Type_Maint.cmdDelete.FontSize(8)
+Gui.F_Tool_Type_Maint.cmdDelete.TabStop(True)
+Gui.F_Tool_Type_Maint.cmdDelete.TabIndex(6)
+Gui.F_Tool_Type_Maint.cmdDelete.Tooltip("")
+Gui.F_Tool_Type_Maint.cmdDelete.ControlGroup(0)
+Gui.F_Tool_Type_Maint.cmdDelete.DefaultValue("")
+
+Gui.F_Tool_Type_Maint.cmdDelete.Event(click,cmddelete_click)
+
+Gui.F_Tool_Type_Maint.cmdUpload.Create(button)
+Gui.F_Tool_Type_Maint.cmdUpload.Caption("Upload Tool Types")
+Gui.F_Tool_Type_Maint.cmdUpload.Visible(True)
+Gui.F_Tool_Type_Maint.cmdUpload.Size(1450,400)
+Gui.F_Tool_Type_Maint.cmdUpload.Zorder(0)
+Gui.F_Tool_Type_Maint.cmdUpload.Position(1200,5400)
+Gui.F_Tool_Type_Maint.cmdUpload.Enabled(True)
+Gui.F_Tool_Type_Maint.cmdUpload.FontName("Arial")
+Gui.F_Tool_Type_Maint.cmdUpload.FontSize(8)
+Gui.F_Tool_Type_Maint.cmdUpload.TabStop(True)
+Gui.F_Tool_Type_Maint.cmdUpload.TabIndex(7)
+Gui.F_Tool_Type_Maint.cmdUpload.Tooltip("")
+Gui.F_Tool_Type_Maint.cmdUpload.ControlGroup(0)
+Gui.F_Tool_Type_Maint.cmdUpload.DefaultValue("")
+
+Gui.F_Tool_Type_Maint.cmdUpload.Event(click,cmdupload_click)
+
+Gui.F_Tool_Type_Maint.cmdParts.Create(button)
+Gui.F_Tool_Type_Maint.cmdParts.Caption("Assign Parts")
+Gui.F_Tool_Type_Maint.cmdParts.Visible(True)
+Gui.F_Tool_Type_Maint.cmdParts.Size(1100,400)
+Gui.F_Tool_Type_Maint.cmdParts.Zorder(0)
+Gui.F_Tool_Type_Maint.cmdParts.Position(3950,5400)
+Gui.F_Tool_Type_Maint.cmdParts.Enabled(True)
+Gui.F_Tool_Type_Maint.cmdParts.FontName("Arial")
+Gui.F_Tool_Type_Maint.cmdParts.FontSize(8)
+Gui.F_Tool_Type_Maint.cmdParts.TabStop(True)
+Gui.F_Tool_Type_Maint.cmdParts.TabIndex(8)
+Gui.F_Tool_Type_Maint.cmdParts.Tooltip("")
+Gui.F_Tool_Type_Maint.cmdParts.ControlGroup(0)
+Gui.F_Tool_Type_Maint.cmdParts.DefaultValue("")
+
+Gui.F_Tool_Type_Maint.cmdParts.Event(click,cmdparts_click)
+
+Gui.F_Tool_Type_Maint.cmdUploadParts.Create(button)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Caption("Upload Parts")
+Gui.F_Tool_Type_Maint.cmdUploadParts.Visible(True)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Size(1100,400)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Zorder(0)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Position(2750,5400)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Enabled(True)
+Gui.F_Tool_Type_Maint.cmdUploadParts.FontName("Arial")
+Gui.F_Tool_Type_Maint.cmdUploadParts.FontSize(8)
+Gui.F_Tool_Type_Maint.cmdUploadParts.TabStop(True)
+Gui.F_Tool_Type_Maint.cmdUploadParts.TabIndex(9)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Tooltip("")
+Gui.F_Tool_Type_Maint.cmdUploadParts.ControlGroup(0)
+Gui.F_Tool_Type_Maint.cmdUploadParts.DefaultValue("")
+
+Gui.F_Tool_Type_Maint.cmdUploadParts.Event(click,cmduploadparts_click)
+
+Gui.F_Assign_Parts..Create
+Gui.F_Assign_Parts..Caption("Assign Parts")
+Gui.F_Assign_Parts..Size(7600,5950)
+Gui.F_Assign_Parts..Position(0,0)
+Gui.F_Assign_Parts..AlwaysOnTop(False)
+Gui.F_Assign_Parts..FontName("Arial")
+Gui.F_Assign_Parts..FontSize(8)
+Gui.F_Assign_Parts..ForeColor(0)
+Gui.F_Assign_Parts..Backcolor(-2147483633)
+Gui.F_Assign_Parts..ControlBox(True)
+Gui.F_Assign_Parts..MaxButton(True)
+Gui.F_Assign_Parts..MinButton(True)
+Gui.F_Assign_Parts..MousePointer(0)
+Gui.F_Assign_Parts..Moveable(True)
+Gui.F_Assign_Parts..Sizeable(True)
+Gui.F_Assign_Parts..ShowInTaskBar(True)
+Gui.F_Assign_Parts..TitleBar(True)
+
+Gui.F_Assign_Parts..Event(resize,f_assign_parts_resize)
+Gui.F_Assign_Parts..Event(unload,f_assign_parts_unload)
+
+Gui.F_Assign_Parts.lbl1.Create(label)
+Gui.F_Assign_Parts.lbl1.Caption("Tool Type ID")
+Gui.F_Assign_Parts.lbl1.Visible(True)
+Gui.F_Assign_Parts.lbl1.Size(1935,255)
+Gui.F_Assign_Parts.lbl1.Zorder(1)
+Gui.F_Assign_Parts.lbl1.Position(200,200)
+Gui.F_Assign_Parts.lbl1.Enabled(True)
+Gui.F_Assign_Parts.lbl1.Alignment(0)
+Gui.F_Assign_Parts.lbl1.FontName("Arial")
+Gui.F_Assign_Parts.lbl1.FontSize(8)
+Gui.F_Assign_Parts.lbl1.Backcolor(-2147483633)
+Gui.F_Assign_Parts.lbl1.BackStyle(0)
+Gui.F_Assign_Parts.lbl1.Tooltip("")
+Gui.F_Assign_Parts.lbl1.ControlGroup(0)
+
+
+Gui.F_Assign_Parts.txtID.Create(textbox)
+Gui.F_Assign_Parts.txtID.Text("")
+Gui.F_Assign_Parts.txtID.Visible(True)
+Gui.F_Assign_Parts.txtID.Size(1000,300)
+Gui.F_Assign_Parts.txtID.Zorder(0)
+Gui.F_Assign_Parts.txtID.Position(200,400)
+Gui.F_Assign_Parts.txtID.Enabled(False)
+Gui.F_Assign_Parts.txtID.Alignment(0)
+Gui.F_Assign_Parts.txtID.FontName("Arial")
+Gui.F_Assign_Parts.txtID.FontSize(8)
+Gui.F_Assign_Parts.txtID.Backcolor(-2147483643)
+Gui.F_Assign_Parts.txtID.BorderStyle(1)
+Gui.F_Assign_Parts.txtID.TabStop(True)
+Gui.F_Assign_Parts.txtID.TabIndex(1)
+Gui.F_Assign_Parts.txtID.Tooltip("")
+Gui.F_Assign_Parts.txtID.ControlGroup(0)
+Gui.F_Assign_Parts.txtID.DefaultValue("")
+
+
+Gui.F_Assign_Parts.lbl2.Create(label)
+Gui.F_Assign_Parts.lbl2.Caption("Tool Type Name")
+Gui.F_Assign_Parts.lbl2.Visible(True)
+Gui.F_Assign_Parts.lbl2.Size(1935,255)
+Gui.F_Assign_Parts.lbl2.Zorder(1)
+Gui.F_Assign_Parts.lbl2.Position(1300,200)
+Gui.F_Assign_Parts.lbl2.Enabled(True)
+Gui.F_Assign_Parts.lbl2.Alignment(0)
+Gui.F_Assign_Parts.lbl2.FontName("Arial")
+Gui.F_Assign_Parts.lbl2.FontSize(8)
+Gui.F_Assign_Parts.lbl2.Backcolor(-2147483633)
+Gui.F_Assign_Parts.lbl2.BackStyle(0)
+Gui.F_Assign_Parts.lbl2.Tooltip("")
+Gui.F_Assign_Parts.lbl2.ControlGroup(0)
+
+
+Gui.F_Assign_Parts.txtName.Create(textbox)
+Gui.F_Assign_Parts.txtName.Text("")
+Gui.F_Assign_Parts.txtName.Visible(True)
+Gui.F_Assign_Parts.txtName.Size(3400,300)
+Gui.F_Assign_Parts.txtName.Zorder(0)
+Gui.F_Assign_Parts.txtName.Position(1300,400)
+Gui.F_Assign_Parts.txtName.Enabled(False)
+Gui.F_Assign_Parts.txtName.Alignment(0)
+Gui.F_Assign_Parts.txtName.FontName("Arial")
+Gui.F_Assign_Parts.txtName.FontSize(8)
+Gui.F_Assign_Parts.txtName.Backcolor(-2147483643)
+Gui.F_Assign_Parts.txtName.BorderStyle(1)
+Gui.F_Assign_Parts.txtName.MaxLength(50)
+Gui.F_Assign_Parts.txtName.TabStop(True)
+Gui.F_Assign_Parts.txtName.TabIndex(3)
+Gui.F_Assign_Parts.txtName.Tooltip("")
+Gui.F_Assign_Parts.txtName.ControlGroup(0)
+Gui.F_Assign_Parts.txtName.DefaultValue("")
+
+
+Gui.F_Assign_Parts.gsfgParts.Create(gsflexgrid)
+Gui.F_Assign_Parts.gsfgParts.Visible(True)
+Gui.F_Assign_Parts.gsfgParts.Size(6950,4000)
+Gui.F_Assign_Parts.gsfgParts.Zorder(0)
+Gui.F_Assign_Parts.gsfgParts.Position(200,800)
+Gui.F_Assign_Parts.gsfgParts.Enabled(True)
+Gui.F_Assign_Parts.gsfgParts.FixedRows(0)
+Gui.F_Assign_Parts.gsfgParts.FixedCols(0)
+
+Gui.F_Assign_Parts.gsfgParts.Event(commandclick,gsfgparts_commandclick)
+
+Gui.F_Assign_Parts.cmdAddPart.Create(button)
+Gui.F_Assign_Parts.cmdAddPart.Caption("Add Part")
+Gui.F_Assign_Parts.cmdAddPart.Visible(True)
+Gui.F_Assign_Parts.cmdAddPart.Size(855,375)
+Gui.F_Assign_Parts.cmdAddPart.Zorder(0)
+Gui.F_Assign_Parts.cmdAddPart.Position(200,4900)
+Gui.F_Assign_Parts.cmdAddPart.Enabled(True)
+Gui.F_Assign_Parts.cmdAddPart.FontName("Arial")
+Gui.F_Assign_Parts.cmdAddPart.FontSize(8)
+Gui.F_Assign_Parts.cmdAddPart.TabStop(True)
+Gui.F_Assign_Parts.cmdAddPart.TabIndex(5)
+Gui.F_Assign_Parts.cmdAddPart.Tooltip("")
+Gui.F_Assign_Parts.cmdAddPart.ControlGroup(0)
+Gui.F_Assign_Parts.cmdAddPart.DefaultValue("")
+
+Gui.F_Assign_Parts.cmdAddPart.Event(click,cmdaddpart_click)
+
+Gui.F_Upload_Tool_Types..Create
+Gui.F_Upload_Tool_Types..Caption("Upload Tool Types")
+Gui.F_Upload_Tool_Types..Size(5900,2975)
+Gui.F_Upload_Tool_Types..Position(0,0)
+Gui.F_Upload_Tool_Types..AlwaysOnTop(False)
+Gui.F_Upload_Tool_Types..FontName("Arial")
+Gui.F_Upload_Tool_Types..FontSize(8)
+Gui.F_Upload_Tool_Types..ForeColor(0)
+Gui.F_Upload_Tool_Types..Backcolor(-2147483633)
+Gui.F_Upload_Tool_Types..ControlBox(True)
+Gui.F_Upload_Tool_Types..MaxButton(False)
+Gui.F_Upload_Tool_Types..MinButton(True)
+Gui.F_Upload_Tool_Types..MousePointer(0)
+Gui.F_Upload_Tool_Types..Moveable(True)
+Gui.F_Upload_Tool_Types..Sizeable(False)
+Gui.F_Upload_Tool_Types..ShowInTaskBar(True)
+Gui.F_Upload_Tool_Types..TitleBar(True)
+
+Gui.F_Upload_Tool_Types..Event(unload,f_upload_tool_types_unload)
+
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Create(frame)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Caption("Duplicate Tool Type Handling")
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Visible(True)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Size(2500,1100)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Zorder(0)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Position(200,800)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Enabled(True)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.BorderStyle(0)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.FontName("Arial")
+Gui.F_Upload_Tool_Types.frmDuplicateTools.FontSize(8)
+Gui.F_Upload_Tool_Types.frmDuplicateTools.Tooltip("")
+
+
+Gui.F_Upload_Tool_Types.frmParts.Create(frame)
+Gui.F_Upload_Tool_Types.frmParts.Caption("Assigned Parts Handling")
+Gui.F_Upload_Tool_Types.frmParts.Visible(True)
+Gui.F_Upload_Tool_Types.frmParts.Size(2800,1100)
+Gui.F_Upload_Tool_Types.frmParts.Zorder(0)
+Gui.F_Upload_Tool_Types.frmParts.Position(2800,800)
+Gui.F_Upload_Tool_Types.frmParts.Enabled(True)
+Gui.F_Upload_Tool_Types.frmParts.BorderStyle(0)
+Gui.F_Upload_Tool_Types.frmParts.FontName("Arial")
+Gui.F_Upload_Tool_Types.frmParts.FontSize(8)
+Gui.F_Upload_Tool_Types.frmParts.Tooltip("")
+
+
+Gui.F_Upload_Tool_Types.txtUpload.Create(textbox)
+Gui.F_Upload_Tool_Types.txtUpload.Text("")
+Gui.F_Upload_Tool_Types.txtUpload.Visible(True)
+Gui.F_Upload_Tool_Types.txtUpload.Size(5000,300)
+Gui.F_Upload_Tool_Types.txtUpload.Zorder(0)
+Gui.F_Upload_Tool_Types.txtUpload.Position(200,400)
+Gui.F_Upload_Tool_Types.txtUpload.Enabled(False)
+Gui.F_Upload_Tool_Types.txtUpload.Alignment(0)
+Gui.F_Upload_Tool_Types.txtUpload.FontName("Arial")
+Gui.F_Upload_Tool_Types.txtUpload.FontSize(8)
+Gui.F_Upload_Tool_Types.txtUpload.Backcolor(-2147483643)
+Gui.F_Upload_Tool_Types.txtUpload.BorderStyle(1)
+Gui.F_Upload_Tool_Types.txtUpload.TabStop(True)
+Gui.F_Upload_Tool_Types.txtUpload.TabIndex(2)
+Gui.F_Upload_Tool_Types.txtUpload.Tooltip("")
+Gui.F_Upload_Tool_Types.txtUpload.ControlGroup(0)
+Gui.F_Upload_Tool_Types.txtUpload.DefaultValue("")
+
+
+Gui.F_Upload_Tool_Types.lbl1.Create(label)
+Gui.F_Upload_Tool_Types.lbl1.Caption("Upload File")
+Gui.F_Upload_Tool_Types.lbl1.Visible(True)
+Gui.F_Upload_Tool_Types.lbl1.Size(1935,255)
+Gui.F_Upload_Tool_Types.lbl1.Zorder(1)
+Gui.F_Upload_Tool_Types.lbl1.Position(200,200)
+Gui.F_Upload_Tool_Types.lbl1.Enabled(True)
+Gui.F_Upload_Tool_Types.lbl1.Alignment(0)
+Gui.F_Upload_Tool_Types.lbl1.FontName("Arial")
+Gui.F_Upload_Tool_Types.lbl1.FontSize(8)
+Gui.F_Upload_Tool_Types.lbl1.Backcolor(-2147483633)
+Gui.F_Upload_Tool_Types.lbl1.BackStyle(0)
+Gui.F_Upload_Tool_Types.lbl1.Tooltip("")
+Gui.F_Upload_Tool_Types.lbl1.ControlGroup(0)
+
+
+Gui.F_Upload_Tool_Types.cmdToolFile.Create(button)
+Gui.F_Upload_Tool_Types.cmdToolFile.Caption("^")
+Gui.F_Upload_Tool_Types.cmdToolFile.Visible(True)
+Gui.F_Upload_Tool_Types.cmdToolFile.Size(300,300)
+Gui.F_Upload_Tool_Types.cmdToolFile.Zorder(0)
+Gui.F_Upload_Tool_Types.cmdToolFile.Position(5300,400)
+Gui.F_Upload_Tool_Types.cmdToolFile.Enabled(True)
+Gui.F_Upload_Tool_Types.cmdToolFile.FontName("Arial")
+Gui.F_Upload_Tool_Types.cmdToolFile.FontSize(8)
+Gui.F_Upload_Tool_Types.cmdToolFile.TabStop(True)
+Gui.F_Upload_Tool_Types.cmdToolFile.TabIndex(4)
+Gui.F_Upload_Tool_Types.cmdToolFile.Tooltip("")
+Gui.F_Upload_Tool_Types.cmdToolFile.ControlGroup(0)
+Gui.F_Upload_Tool_Types.cmdToolFile.DefaultValue("")
+
+Gui.F_Upload_Tool_Types.cmdToolFile.Event(click,cmdtoolfile_click)
+
+Gui.F_Upload_Tool_Types.optOverwrite.Create(option)
+Gui.F_Upload_Tool_Types.optOverwrite.Caption("Overwrite automatically")
+Gui.F_Upload_Tool_Types.optOverwrite.Visible(True)
+Gui.F_Upload_Tool_Types.optOverwrite.Size(2010,255)
+Gui.F_Upload_Tool_Types.optOverwrite.Zorder(0)
+Gui.F_Upload_Tool_Types.optOverwrite.Position(200,500)
+Gui.F_Upload_Tool_Types.optOverwrite.Enabled(True)
+Gui.F_Upload_Tool_Types.optOverwrite.Alignment(0)
+Gui.F_Upload_Tool_Types.optOverwrite.FontName("Arial")
+Gui.F_Upload_Tool_Types.optOverwrite.FontSize(8)
+Gui.F_Upload_Tool_Types.optOverwrite.Parent("frmduplicatetools")
+Gui.F_Upload_Tool_Types.optOverwrite.TabStop(False)
+Gui.F_Upload_Tool_Types.optOverwrite.TabIndex(5)
+Gui.F_Upload_Tool_Types.optOverwrite.Tooltip("")
+Gui.F_Upload_Tool_Types.optOverwrite.ControlGroup(0)
+Gui.F_Upload_Tool_Types.optOverwrite.DefaultValue("")
+
+
+Gui.F_Upload_Tool_Types.optNoOverwrite.Create(option)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Caption("Do not overwrite")
+Gui.F_Upload_Tool_Types.optNoOverwrite.Visible(True)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Size(2100,255)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Zorder(0)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Position(200,250)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Enabled(True)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Alignment(0)
+Gui.F_Upload_Tool_Types.optNoOverwrite.FontName("Arial")
+Gui.F_Upload_Tool_Types.optNoOverwrite.FontSize(8)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Parent("frmduplicatetools")
+Gui.F_Upload_Tool_Types.optNoOverwrite.TabStop(False)
+Gui.F_Upload_Tool_Types.optNoOverwrite.TabIndex(6)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Tooltip("")
+Gui.F_Upload_Tool_Types.optNoOverwrite.ControlGroup(0)
+Gui.F_Upload_Tool_Types.optNoOverwrite.DefaultValue("")
+
+
+Gui.F_Upload_Tool_Types.optDeleteParts.Create(option)
+Gui.F_Upload_Tool_Types.optDeleteParts.Caption("Delete all assigned parts")
+Gui.F_Upload_Tool_Types.optDeleteParts.Visible(True)
+Gui.F_Upload_Tool_Types.optDeleteParts.Size(2145,255)
+Gui.F_Upload_Tool_Types.optDeleteParts.Zorder(0)
+Gui.F_Upload_Tool_Types.optDeleteParts.Position(200,500)
+Gui.F_Upload_Tool_Types.optDeleteParts.Enabled(True)
+Gui.F_Upload_Tool_Types.optDeleteParts.Alignment(0)
+Gui.F_Upload_Tool_Types.optDeleteParts.FontName("Arial")
+Gui.F_Upload_Tool_Types.optDeleteParts.FontSize(8)
+Gui.F_Upload_Tool_Types.optDeleteParts.Parent("frmparts")
+Gui.F_Upload_Tool_Types.optDeleteParts.TabStop(False)
+Gui.F_Upload_Tool_Types.optDeleteParts.TabIndex(7)
+Gui.F_Upload_Tool_Types.optDeleteParts.Tooltip("")
+Gui.F_Upload_Tool_Types.optDeleteParts.ControlGroup(0)
+Gui.F_Upload_Tool_Types.optDeleteParts.DefaultValue("")
+
+
+Gui.F_Upload_Tool_Types.optClearFields.Create(option)
+Gui.F_Upload_Tool_Types.optClearFields.Caption("Clear part fields")
+Gui.F_Upload_Tool_Types.optClearFields.Visible(True)
+Gui.F_Upload_Tool_Types.optClearFields.Size(2100,255)
+Gui.F_Upload_Tool_Types.optClearFields.Zorder(0)
+Gui.F_Upload_Tool_Types.optClearFields.Position(200,750)
+Gui.F_Upload_Tool_Types.optClearFields.Enabled(True)
+Gui.F_Upload_Tool_Types.optClearFields.Alignment(0)
+Gui.F_Upload_Tool_Types.optClearFields.FontName("Arial")
+Gui.F_Upload_Tool_Types.optClearFields.FontSize(8)
+Gui.F_Upload_Tool_Types.optClearFields.Parent("frmparts")
+Gui.F_Upload_Tool_Types.optClearFields.TabStop(False)
+Gui.F_Upload_Tool_Types.optClearFields.TabIndex(8)
+Gui.F_Upload_Tool_Types.optClearFields.Tooltip("")
+Gui.F_Upload_Tool_Types.optClearFields.ControlGroup(0)
+Gui.F_Upload_Tool_Types.optClearFields.DefaultValue("")
+
+
+Gui.F_Upload_Tool_Types.optNoPartChange.Create(option)
+Gui.F_Upload_Tool_Types.optNoPartChange.Caption("Keep assigned parts and fields")
+Gui.F_Upload_Tool_Types.optNoPartChange.Visible(True)
+Gui.F_Upload_Tool_Types.optNoPartChange.Size(2550,255)
+Gui.F_Upload_Tool_Types.optNoPartChange.Zorder(0)
+Gui.F_Upload_Tool_Types.optNoPartChange.Position(200,250)
+Gui.F_Upload_Tool_Types.optNoPartChange.Enabled(True)
+Gui.F_Upload_Tool_Types.optNoPartChange.Alignment(0)
+Gui.F_Upload_Tool_Types.optNoPartChange.FontName("Arial")
+Gui.F_Upload_Tool_Types.optNoPartChange.FontSize(8)
+Gui.F_Upload_Tool_Types.optNoPartChange.Parent("frmparts")
+Gui.F_Upload_Tool_Types.optNoPartChange.TabStop(False)
+Gui.F_Upload_Tool_Types.optNoPartChange.TabIndex(9)
+Gui.F_Upload_Tool_Types.optNoPartChange.Tooltip("")
+Gui.F_Upload_Tool_Types.optNoPartChange.ControlGroup(0)
+Gui.F_Upload_Tool_Types.optNoPartChange.DefaultValue("")
+
+
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Create(button)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Caption("Upload")
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Visible(True)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Size(855,375)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Zorder(0)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Position(200,2000)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Enabled(True)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.FontName("Arial")
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.FontSize(8)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.TabStop(True)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.TabIndex(10)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Tooltip("")
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.ControlGroup(0)
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.DefaultValue("")
+
+Gui.F_Upload_Tool_Types.cmdUploadToolTypes.Event(click,cmduploadtooltypes_click)
+
+Gui.F_Upload_Parts..Create
+Gui.F_Upload_Parts..Caption("Upload Parts")
+Gui.F_Upload_Parts..Size(5955,4080)
+Gui.F_Upload_Parts..Position(0,0)
+Gui.F_Upload_Parts..AlwaysOnTop(False)
+Gui.F_Upload_Parts..FontName("Arial")
+Gui.F_Upload_Parts..FontSize(8)
+Gui.F_Upload_Parts..ForeColor(0)
+Gui.F_Upload_Parts..Backcolor(-2147483633)
+Gui.F_Upload_Parts..ControlBox(True)
+Gui.F_Upload_Parts..MaxButton(False)
+Gui.F_Upload_Parts..MinButton(True)
+Gui.F_Upload_Parts..MousePointer(0)
+Gui.F_Upload_Parts..Moveable(True)
+Gui.F_Upload_Parts..Sizeable(False)
+Gui.F_Upload_Parts..ShowInTaskBar(True)
+Gui.F_Upload_Parts..TitleBar(True)
+
+Gui.F_Upload_Parts..Event(unload,f_upload_parts_unload)
+
+Gui.F_Upload_Parts.frmAssignParts.Create(frame)
+Gui.F_Upload_Parts.frmAssignParts.Caption("Assigned Parts Handling")
+Gui.F_Upload_Parts.frmAssignParts.Visible(True)
+Gui.F_Upload_Parts.frmAssignParts.Size(2700,900)
+Gui.F_Upload_Parts.frmAssignParts.Zorder(0)
+Gui.F_Upload_Parts.frmAssignParts.Position(200,800)
+Gui.F_Upload_Parts.frmAssignParts.Enabled(True)
+Gui.F_Upload_Parts.frmAssignParts.BorderStyle(0)
+Gui.F_Upload_Parts.frmAssignParts.FontName("Arial")
+Gui.F_Upload_Parts.frmAssignParts.FontSize(8)
+Gui.F_Upload_Parts.frmAssignParts.Tooltip("")
+
+
+Gui.F_Upload_Parts.frmDuplicateParts.Create(frame)
+Gui.F_Upload_Parts.frmDuplicateParts.Caption("Duplicate Parts Handling")
+Gui.F_Upload_Parts.frmDuplicateParts.Visible(True)
+Gui.F_Upload_Parts.frmDuplicateParts.Size(2600,900)
+Gui.F_Upload_Parts.frmDuplicateParts.Zorder(0)
+Gui.F_Upload_Parts.frmDuplicateParts.Position(3000,800)
+Gui.F_Upload_Parts.frmDuplicateParts.Enabled(True)
+Gui.F_Upload_Parts.frmDuplicateParts.BorderStyle(0)
+Gui.F_Upload_Parts.frmDuplicateParts.FontName("Arial")
+Gui.F_Upload_Parts.frmDuplicateParts.FontSize(8)
+Gui.F_Upload_Parts.frmDuplicateParts.Tooltip("")
+
+
+Gui.F_Upload_Parts.frmSpreadsheet.Create(frame)
+Gui.F_Upload_Parts.frmSpreadsheet.Caption("")
+Gui.F_Upload_Parts.frmSpreadsheet.Visible(True)
+Gui.F_Upload_Parts.frmSpreadsheet.Size(5415,1350)
+Gui.F_Upload_Parts.frmSpreadsheet.Zorder(0)
+Gui.F_Upload_Parts.frmSpreadsheet.Position(200,1700)
+Gui.F_Upload_Parts.frmSpreadsheet.Enabled(True)
+Gui.F_Upload_Parts.frmSpreadsheet.BorderStyle(1)
+Gui.F_Upload_Parts.frmSpreadsheet.FontName("Arial")
+Gui.F_Upload_Parts.frmSpreadsheet.FontSize(8)
+Gui.F_Upload_Parts.frmSpreadsheet.Tooltip("")
+
+
+Gui.F_Upload_Parts.lbl1.Create(label)
+Gui.F_Upload_Parts.lbl1.Caption("Upload File")
+Gui.F_Upload_Parts.lbl1.Visible(True)
+Gui.F_Upload_Parts.lbl1.Size(1935,255)
+Gui.F_Upload_Parts.lbl1.Zorder(1)
+Gui.F_Upload_Parts.lbl1.Position(200,200)
+Gui.F_Upload_Parts.lbl1.Enabled(True)
+Gui.F_Upload_Parts.lbl1.Alignment(0)
+Gui.F_Upload_Parts.lbl1.FontName("Arial")
+Gui.F_Upload_Parts.lbl1.FontSize(8)
+Gui.F_Upload_Parts.lbl1.Backcolor(-2147483633)
+Gui.F_Upload_Parts.lbl1.BackStyle(0)
+Gui.F_Upload_Parts.lbl1.Tooltip("")
+Gui.F_Upload_Parts.lbl1.ControlGroup(0)
+
+
+Gui.F_Upload_Parts.txtUpload.Create(textbox)
+Gui.F_Upload_Parts.txtUpload.Text("")
+Gui.F_Upload_Parts.txtUpload.Visible(True)
+Gui.F_Upload_Parts.txtUpload.Size(5000,300)
+Gui.F_Upload_Parts.txtUpload.Zorder(0)
+Gui.F_Upload_Parts.txtUpload.Position(200,400)
+Gui.F_Upload_Parts.txtUpload.Enabled(False)
+Gui.F_Upload_Parts.txtUpload.Alignment(0)
+Gui.F_Upload_Parts.txtUpload.FontName("Arial")
+Gui.F_Upload_Parts.txtUpload.FontSize(8)
+Gui.F_Upload_Parts.txtUpload.Backcolor(-2147483643)
+Gui.F_Upload_Parts.txtUpload.BorderStyle(1)
+Gui.F_Upload_Parts.txtUpload.TabStop(True)
+Gui.F_Upload_Parts.txtUpload.TabIndex(4)
+Gui.F_Upload_Parts.txtUpload.Tooltip("")
+Gui.F_Upload_Parts.txtUpload.ControlGroup(0)
+Gui.F_Upload_Parts.txtUpload.DefaultValue("")
+
+
+Gui.F_Upload_Parts.cmdPartFile.Create(button)
+Gui.F_Upload_Parts.cmdPartFile.Caption("^")
+Gui.F_Upload_Parts.cmdPartFile.Visible(True)
+Gui.F_Upload_Parts.cmdPartFile.Size(300,300)
+Gui.F_Upload_Parts.cmdPartFile.Zorder(0)
+Gui.F_Upload_Parts.cmdPartFile.Position(5300,400)
+Gui.F_Upload_Parts.cmdPartFile.Enabled(True)
+Gui.F_Upload_Parts.cmdPartFile.FontName("Arial")
+Gui.F_Upload_Parts.cmdPartFile.FontSize(8)
+Gui.F_Upload_Parts.cmdPartFile.TabStop(True)
+Gui.F_Upload_Parts.cmdPartFile.TabIndex(5)
+Gui.F_Upload_Parts.cmdPartFile.Tooltip("")
+Gui.F_Upload_Parts.cmdPartFile.ControlGroup(0)
+Gui.F_Upload_Parts.cmdPartFile.DefaultValue("")
+
+Gui.F_Upload_Parts.cmdPartFile.Event(click,cmdpartfile_click)
+
+Gui.F_Upload_Parts.optDoNotDeleteParts.Create(option)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Caption("Do not delete previous parts")
+Gui.F_Upload_Parts.optDoNotDeleteParts.Visible(True)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Size(2415,255)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Zorder(0)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Position(200,250)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Enabled(True)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Alignment(0)
+Gui.F_Upload_Parts.optDoNotDeleteParts.FontName("Arial")
+Gui.F_Upload_Parts.optDoNotDeleteParts.FontSize(8)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Parent("frmassignparts")
+Gui.F_Upload_Parts.optDoNotDeleteParts.TabStop(False)
+Gui.F_Upload_Parts.optDoNotDeleteParts.TabIndex(6)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Tooltip("")
+Gui.F_Upload_Parts.optDoNotDeleteParts.ControlGroup(0)
+Gui.F_Upload_Parts.optDoNotDeleteParts.DefaultValue("")
+
+
+Gui.F_Upload_Parts.optDeleteAllParts.Create(option)
+Gui.F_Upload_Parts.optDeleteAllParts.Caption("Delete all previous parts")
+Gui.F_Upload_Parts.optDeleteAllParts.Visible(True)
+Gui.F_Upload_Parts.optDeleteAllParts.Size(2205,255)
+Gui.F_Upload_Parts.optDeleteAllParts.Zorder(0)
+Gui.F_Upload_Parts.optDeleteAllParts.Position(200,500)
+Gui.F_Upload_Parts.optDeleteAllParts.Enabled(True)
+Gui.F_Upload_Parts.optDeleteAllParts.Alignment(0)
+Gui.F_Upload_Parts.optDeleteAllParts.FontName("Arial")
+Gui.F_Upload_Parts.optDeleteAllParts.FontSize(8)
+Gui.F_Upload_Parts.optDeleteAllParts.Parent("frmassignparts")
+Gui.F_Upload_Parts.optDeleteAllParts.TabStop(False)
+Gui.F_Upload_Parts.optDeleteAllParts.TabIndex(7)
+Gui.F_Upload_Parts.optDeleteAllParts.Tooltip("")
+Gui.F_Upload_Parts.optDeleteAllParts.ControlGroup(0)
+Gui.F_Upload_Parts.optDeleteAllParts.DefaultValue("")
+
+
+Gui.F_Upload_Parts.cmdUploadPartsFile.Create(button)
+Gui.F_Upload_Parts.cmdUploadPartsFile.Caption("Upload")
+Gui.F_Upload_Parts.cmdUploadPartsFile.Visible(True)
+Gui.F_Upload_Parts.cmdUploadPartsFile.Size(855,375)
+Gui.F_Upload_Parts.cmdUploadPartsFile.Zorder(0)
+Gui.F_Upload_Parts.cmdUploadPartsFile.Position(200,3100)
+Gui.F_Upload_Parts.cmdUploadPartsFile.Enabled(True)
+Gui.F_Upload_Parts.cmdUploadPartsFile.FontName("Arial")
+Gui.F_Upload_Parts.cmdUploadPartsFile.FontSize(8)
+Gui.F_Upload_Parts.cmdUploadPartsFile.TabStop(True)
+Gui.F_Upload_Parts.cmdUploadPartsFile.TabIndex(8)
+Gui.F_Upload_Parts.cmdUploadPartsFile.Tooltip("")
+Gui.F_Upload_Parts.cmdUploadPartsFile.ControlGroup(0)
+Gui.F_Upload_Parts.cmdUploadPartsFile.DefaultValue("")
+
+Gui.F_Upload_Parts.cmdUploadPartsFile.Event(click,cmduploadpartsfile_click)
+
+Gui.F_Upload_Parts.optDoNotOverwritePart.Create(option)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Caption("Do not overwrite")
+Gui.F_Upload_Parts.optDoNotOverwritePart.Visible(True)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Size(2145,255)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Zorder(0)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Position(200,250)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Enabled(True)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Alignment(0)
+Gui.F_Upload_Parts.optDoNotOverwritePart.FontName("Arial")
+Gui.F_Upload_Parts.optDoNotOverwritePart.FontSize(8)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Parent("frmduplicateparts")
+Gui.F_Upload_Parts.optDoNotOverwritePart.TabStop(False)
+Gui.F_Upload_Parts.optDoNotOverwritePart.TabIndex(9)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Tooltip("")
+Gui.F_Upload_Parts.optDoNotOverwritePart.ControlGroup(0)
+Gui.F_Upload_Parts.optDoNotOverwritePart.DefaultValue("")
+
+
+Gui.F_Upload_Parts.optOverwritePart.Create(option)
+Gui.F_Upload_Parts.optOverwritePart.Caption("Overwrite automatically")
+Gui.F_Upload_Parts.optOverwritePart.Visible(True)
+Gui.F_Upload_Parts.optOverwritePart.Size(2160,255)
+Gui.F_Upload_Parts.optOverwritePart.Zorder(0)
+Gui.F_Upload_Parts.optOverwritePart.Position(200,500)
+Gui.F_Upload_Parts.optOverwritePart.Enabled(True)
+Gui.F_Upload_Parts.optOverwritePart.Alignment(0)
+Gui.F_Upload_Parts.optOverwritePart.FontName("Arial")
+Gui.F_Upload_Parts.optOverwritePart.FontSize(8)
+Gui.F_Upload_Parts.optOverwritePart.Parent("frmduplicateparts")
+Gui.F_Upload_Parts.optOverwritePart.TabStop(False)
+Gui.F_Upload_Parts.optOverwritePart.TabIndex(10)
+Gui.F_Upload_Parts.optOverwritePart.Tooltip("")
+Gui.F_Upload_Parts.optOverwritePart.ControlGroup(0)
+Gui.F_Upload_Parts.optOverwritePart.DefaultValue("")
+
+
+Gui.F_Upload_Parts.lbl2.Create(label)
+Gui.F_Upload_Parts.lbl2.Caption("Specifying the max columns and rows for an entire spreadsheet will minimize wait time.  Any cells not within this range will be cut off.")
+Gui.F_Upload_Parts.lbl2.Visible(True)
+Gui.F_Upload_Parts.lbl2.Size(5100,450)
+Gui.F_Upload_Parts.lbl2.Zorder(1)
+Gui.F_Upload_Parts.lbl2.Position(200,200)
+Gui.F_Upload_Parts.lbl2.Enabled(True)
+Gui.F_Upload_Parts.lbl2.Alignment(0)
+Gui.F_Upload_Parts.lbl2.FontName("Arial")
+Gui.F_Upload_Parts.lbl2.FontSize(8)
+Gui.F_Upload_Parts.lbl2.Backcolor(-2147483633)
+Gui.F_Upload_Parts.lbl2.BackStyle(0)
+Gui.F_Upload_Parts.lbl2.Parent("frmspreadsheet")
+Gui.F_Upload_Parts.lbl2.Tooltip("")
+Gui.F_Upload_Parts.lbl2.ControlGroup(0)
+
+
+Gui.F_Upload_Parts.lbl3.Create(label)
+Gui.F_Upload_Parts.lbl3.Caption("Max Columns (2-100)")
+Gui.F_Upload_Parts.lbl3.Visible(True)
+Gui.F_Upload_Parts.lbl3.Size(1590,255)
+Gui.F_Upload_Parts.lbl3.Zorder(1)
+Gui.F_Upload_Parts.lbl3.Position(200,700)
+Gui.F_Upload_Parts.lbl3.Enabled(True)
+Gui.F_Upload_Parts.lbl3.Alignment(0)
+Gui.F_Upload_Parts.lbl3.FontName("Arial")
+Gui.F_Upload_Parts.lbl3.FontSize(8)
+Gui.F_Upload_Parts.lbl3.Backcolor(-2147483633)
+Gui.F_Upload_Parts.lbl3.BackStyle(0)
+Gui.F_Upload_Parts.lbl3.Parent("frmspreadsheet")
+Gui.F_Upload_Parts.lbl3.Tooltip("")
+Gui.F_Upload_Parts.lbl3.ControlGroup(0)
+
+
+Gui.F_Upload_Parts.txtCol.Create(textbox)
+Gui.F_Upload_Parts.txtCol.Text("100")
+Gui.F_Upload_Parts.txtCol.Visible(True)
+Gui.F_Upload_Parts.txtCol.Size(1600,300)
+Gui.F_Upload_Parts.txtCol.Zorder(0)
+Gui.F_Upload_Parts.txtCol.Position(200,900)
+Gui.F_Upload_Parts.txtCol.Enabled(True)
+Gui.F_Upload_Parts.txtCol.Alignment(0)
+Gui.F_Upload_Parts.txtCol.FontName("Arial")
+Gui.F_Upload_Parts.txtCol.FontSize(8)
+Gui.F_Upload_Parts.txtCol.Backcolor(-2147483643)
+Gui.F_Upload_Parts.txtCol.BorderStyle(1)
+Gui.F_Upload_Parts.txtCol.MaxLength(3)
+Gui.F_Upload_Parts.txtCol.Parent("frmspreadsheet")
+Gui.F_Upload_Parts.txtCol.TabStop(True)
+Gui.F_Upload_Parts.txtCol.TabIndex(13)
+Gui.F_Upload_Parts.txtCol.Tooltip("")
+Gui.F_Upload_Parts.txtCol.ControlGroup(0)
+Gui.F_Upload_Parts.txtCol.DefaultValue("")
+
+
+Gui.F_Upload_Parts.lbl4.Create(label)
+Gui.F_Upload_Parts.lbl4.Caption("Max Rows (4-103)")
+Gui.F_Upload_Parts.lbl4.Visible(True)
+Gui.F_Upload_Parts.lbl4.Size(1935,255)
+Gui.F_Upload_Parts.lbl4.Zorder(1)
+Gui.F_Upload_Parts.lbl4.Position(1900,700)
+Gui.F_Upload_Parts.lbl4.Enabled(True)
+Gui.F_Upload_Parts.lbl4.Alignment(0)
+Gui.F_Upload_Parts.lbl4.FontName("Arial")
+Gui.F_Upload_Parts.lbl4.FontSize(8)
+Gui.F_Upload_Parts.lbl4.Backcolor(-2147483633)
+Gui.F_Upload_Parts.lbl4.BackStyle(0)
+Gui.F_Upload_Parts.lbl4.Parent("frmspreadsheet")
+Gui.F_Upload_Parts.lbl4.Tooltip("")
+Gui.F_Upload_Parts.lbl4.ControlGroup(0)
+
+
+Gui.F_Upload_Parts.txtRow.Create(textbox)
+Gui.F_Upload_Parts.txtRow.Text("103")
+Gui.F_Upload_Parts.txtRow.Visible(True)
+Gui.F_Upload_Parts.txtRow.Size(1600,300)
+Gui.F_Upload_Parts.txtRow.Zorder(0)
+Gui.F_Upload_Parts.txtRow.Position(1900,900)
+Gui.F_Upload_Parts.txtRow.Enabled(True)
+Gui.F_Upload_Parts.txtRow.Alignment(0)
+Gui.F_Upload_Parts.txtRow.FontName("Arial")
+Gui.F_Upload_Parts.txtRow.FontSize(8)
+Gui.F_Upload_Parts.txtRow.Backcolor(-2147483643)
+Gui.F_Upload_Parts.txtRow.BorderStyle(1)
+Gui.F_Upload_Parts.txtRow.MaxLength(3)
+Gui.F_Upload_Parts.txtRow.Parent("frmspreadsheet")
+Gui.F_Upload_Parts.txtRow.TabStop(True)
+Gui.F_Upload_Parts.txtRow.TabIndex(15)
+Gui.F_Upload_Parts.txtRow.Tooltip("")
+Gui.F_Upload_Parts.txtRow.ControlGroup(0)
+Gui.F_Upload_Parts.txtRow.DefaultValue("")
+
+
+Gui.F_Add_Part..Create
+Gui.F_Add_Part..Caption("Add Part")
+Gui.F_Add_Part..Size(3675,2430)
+Gui.F_Add_Part..Position(0,0)
+Gui.F_Add_Part..AlwaysOnTop(False)
+Gui.F_Add_Part..FontName("Arial")
+Gui.F_Add_Part..FontSize(8)
+Gui.F_Add_Part..ForeColor(0)
+Gui.F_Add_Part..Backcolor(-2147483633)
+Gui.F_Add_Part..ControlBox(True)
+Gui.F_Add_Part..MaxButton(False)
+Gui.F_Add_Part..MinButton(True)
+Gui.F_Add_Part..MousePointer(0)
+Gui.F_Add_Part..Moveable(True)
+Gui.F_Add_Part..Sizeable(False)
+Gui.F_Add_Part..ShowInTaskBar(True)
+Gui.F_Add_Part..TitleBar(True)
+
+Gui.F_Add_Part..Event(unload,f_add_part_unload)
+
+Gui.F_Add_Part.lbl1.Create(label)
+Gui.F_Add_Part.lbl1.Caption("Part")
+Gui.F_Add_Part.lbl1.Visible(True)
+Gui.F_Add_Part.lbl1.Size(1935,255)
+Gui.F_Add_Part.lbl1.Zorder(1)
+Gui.F_Add_Part.lbl1.Position(200,200)
+Gui.F_Add_Part.lbl1.Enabled(True)
+Gui.F_Add_Part.lbl1.Alignment(0)
+Gui.F_Add_Part.lbl1.FontName("Arial")
+Gui.F_Add_Part.lbl1.FontSize(8)
+Gui.F_Add_Part.lbl1.Backcolor(-2147483633)
+Gui.F_Add_Part.lbl1.BackStyle(0)
+Gui.F_Add_Part.lbl1.Tooltip("")
+Gui.F_Add_Part.lbl1.ControlGroup(0)
+
+
+Gui.F_Add_Part.txtPart.Create(textbox)
+Gui.F_Add_Part.txtPart.Text("")
+Gui.F_Add_Part.txtPart.Visible(True)
+Gui.F_Add_Part.txtPart.Size(2000,300)
+Gui.F_Add_Part.txtPart.Zorder(0)
+Gui.F_Add_Part.txtPart.Position(200,400)
+Gui.F_Add_Part.txtPart.Enabled(True)
+Gui.F_Add_Part.txtPart.Alignment(0)
+Gui.F_Add_Part.txtPart.FontName("Arial")
+Gui.F_Add_Part.txtPart.FontSize(8)
+Gui.F_Add_Part.txtPart.Backcolor(-2147483643)
+Gui.F_Add_Part.txtPart.BorderStyle(1)
+Gui.F_Add_Part.txtPart.MaxLength(20)
+Gui.F_Add_Part.txtPart.TabStop(True)
+Gui.F_Add_Part.txtPart.TabIndex(1)
+Gui.F_Add_Part.txtPart.Tooltip("")
+Gui.F_Add_Part.txtPart.ControlGroup(0)
+Gui.F_Add_Part.txtPart.DefaultValue("")
+
+
+Gui.F_Add_Part.lbl2.Create(label)
+Gui.F_Add_Part.lbl2.Caption("Location")
+Gui.F_Add_Part.lbl2.Visible(True)
+Gui.F_Add_Part.lbl2.Size(1935,255)
+Gui.F_Add_Part.lbl2.Zorder(1)
+Gui.F_Add_Part.lbl2.Position(2300,200)
+Gui.F_Add_Part.lbl2.Enabled(True)
+Gui.F_Add_Part.lbl2.Alignment(0)
+Gui.F_Add_Part.lbl2.FontName("Arial")
+Gui.F_Add_Part.lbl2.FontSize(8)
+Gui.F_Add_Part.lbl2.Backcolor(-2147483633)
+Gui.F_Add_Part.lbl2.BackStyle(0)
+Gui.F_Add_Part.lbl2.Tooltip("")
+Gui.F_Add_Part.lbl2.ControlGroup(0)
+
+
+Gui.F_Add_Part.txtLoc.Create(textbox)
+Gui.F_Add_Part.txtLoc.Text("")
+Gui.F_Add_Part.txtLoc.Visible(True)
+Gui.F_Add_Part.txtLoc.Size(1000,300)
+Gui.F_Add_Part.txtLoc.Zorder(0)
+Gui.F_Add_Part.txtLoc.Position(2300,400)
+Gui.F_Add_Part.txtLoc.Enabled(True)
+Gui.F_Add_Part.txtLoc.Alignment(0)
+Gui.F_Add_Part.txtLoc.FontName("Arial")
+Gui.F_Add_Part.txtLoc.FontSize(8)
+Gui.F_Add_Part.txtLoc.Backcolor(-2147483643)
+Gui.F_Add_Part.txtLoc.BorderStyle(1)
+Gui.F_Add_Part.txtLoc.MaxLength(6)
+Gui.F_Add_Part.txtLoc.TabStop(True)
+Gui.F_Add_Part.txtLoc.TabIndex(3)
+Gui.F_Add_Part.txtLoc.Tooltip("")
+Gui.F_Add_Part.txtLoc.ControlGroup(0)
+Gui.F_Add_Part.txtLoc.DefaultValue("")
+
+
+Gui.F_Add_Part.lbl3.Create(label)
+Gui.F_Add_Part.lbl3.Caption("Description")
+Gui.F_Add_Part.lbl3.Visible(True)
+Gui.F_Add_Part.lbl3.Size(1935,255)
+Gui.F_Add_Part.lbl3.Zorder(1)
+Gui.F_Add_Part.lbl3.Position(200,800)
+Gui.F_Add_Part.lbl3.Enabled(True)
+Gui.F_Add_Part.lbl3.Alignment(0)
+Gui.F_Add_Part.lbl3.FontName("Arial")
+Gui.F_Add_Part.lbl3.FontSize(8)
+Gui.F_Add_Part.lbl3.Backcolor(-2147483633)
+Gui.F_Add_Part.lbl3.BackStyle(0)
+Gui.F_Add_Part.lbl3.Tooltip("")
+Gui.F_Add_Part.lbl3.ControlGroup(0)
+
+
+Gui.F_Add_Part.txtDescription.Create(textbox)
+Gui.F_Add_Part.txtDescription.Text("")
+Gui.F_Add_Part.txtDescription.Visible(True)
+Gui.F_Add_Part.txtDescription.Size(3100,300)
+Gui.F_Add_Part.txtDescription.Zorder(0)
+Gui.F_Add_Part.txtDescription.Position(200,1000)
+Gui.F_Add_Part.txtDescription.Enabled(True)
+Gui.F_Add_Part.txtDescription.Alignment(0)
+Gui.F_Add_Part.txtDescription.FontName("Arial")
+Gui.F_Add_Part.txtDescription.FontSize(8)
+Gui.F_Add_Part.txtDescription.Backcolor(-2147483643)
+Gui.F_Add_Part.txtDescription.BorderStyle(1)
+Gui.F_Add_Part.txtDescription.MaxLength(50)
+Gui.F_Add_Part.txtDescription.TabStop(True)
+Gui.F_Add_Part.txtDescription.TabIndex(5)
+Gui.F_Add_Part.txtDescription.Tooltip("")
+Gui.F_Add_Part.txtDescription.ControlGroup(0)
+Gui.F_Add_Part.txtDescription.DefaultValue("")
+
+
+Gui.F_Add_Part.cmdOK.Create(button)
+Gui.F_Add_Part.cmdOK.Caption("OK")
+Gui.F_Add_Part.cmdOK.Visible(True)
+Gui.F_Add_Part.cmdOK.Size(855,375)
+Gui.F_Add_Part.cmdOK.Zorder(0)
+Gui.F_Add_Part.cmdOK.Position(200,1400)
+Gui.F_Add_Part.cmdOK.Enabled(True)
+Gui.F_Add_Part.cmdOK.FontName("Arial")
+Gui.F_Add_Part.cmdOK.FontSize(8)
+Gui.F_Add_Part.cmdOK.TabStop(True)
+Gui.F_Add_Part.cmdOK.TabIndex(6)
+Gui.F_Add_Part.cmdOK.Tooltip("")
+Gui.F_Add_Part.cmdOK.ControlGroup(0)
+Gui.F_Add_Part.cmdOK.DefaultValue("")
+
+Gui.F_Add_Part.cmdOK.Event(click,cmdok_click)
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.Global.sText.Declare(String)
+Variable.Global.iRow.Declare(Long,-1)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+V.Local.iC.Declare(Long)
+V.Local.bAccess.Declare(Boolean)
+'Menu option under Inventory > File
+'TO ADD:  Only user SUPERVSR may upload
+'Note: This script contains no coding for editing of Tool Type fields.  Refer to ATG_Tool_Type_MaintEditableFields.gas for some of the code written for this, if this is to be added in the future
+
+V.Local.bAccess.Set(False)
+f.Intrinsic.Control.If(V.Caller.User.ucase,=,"SUPERVSR")
+	V.local.bAccess.Set(True)
+f.Intrinsic.Control.ElseIf(V.Caller.User.ucase,=,"CHRISTY3")
+	V.local.bAccess.Set(True)
+f.Intrinsic.Control.ElseIf(V.Caller.User.ucase,=,"RAY")
+	V.local.bAccess.Set(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.bAccess,<>,True)
+	F.Intrinsic.UI.Msgbox("Access restricted.")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...")
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+'NOTE: CHANGE READ SPREADSHEET FUNCTION TO EXCEL
+Gui.F_Tool_Type_Maint.gsfgFields.Rows(1)
+Gui.F_Tool_Type_Maint.gsfgFields.Cols(5)
+Gui.F_Tool_Type_Maint.gsfgFields.TextMatrix(0,0,"Field")
+Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(0,500)
+Gui.F_Tool_Type_Maint.gsfgFields.TextMatrix(1,0,"Name")
+Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(1,2500)
+Gui.F_Tool_Type_Maint.gsfgFields.TextMatrix(2,0,"Format")
+Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(2,1250)
+Gui.F_Tool_Type_Maint.gsfgFields.TextMatrix(3,0,"Length")
+Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(3,600)
+Gui.F_Tool_Type_Maint.gsfgFields.TextMatrix(4,0,"Justified")
+Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(4,750)
+
+F.Intrinsic.Control.For(V.Local.iC,0,4,1)
+	Gui.F_Tool_Type_Maint.gsfgFields.BuildStyle(1,V.Local.iC,"format","alignment","2")
+	Gui.F_Tool_Type_Maint.gsfgFields.BuildStyle(1,V.Local.iC,"type","locked","true")
+F.Intrinsic.Control.Next(V.Local.iC)
+
+Gui.F_Tool_Type_Maint.gsfgFields.Rows(2)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedRows(1)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedCols(1)
+Gui.F_Tool_Type_Maint.gsfgFields.ApplyStyle(1,1)
+
+Gui.F_Tool_Type_Maint.txtID.Text("")
+Gui.F_Tool_Type_Maint.txtID.SetMetaData("",-1)
+
+Gui.F_Assign_Parts.gsfgParts.Rows(1)
+Gui.F_Assign_Parts.gsfgParts.Cols(4)
+Gui.F_Assign_Parts.gsfgParts.TextMatrix(0,0,"Part")
+Gui.F_Assign_Parts.gsfgParts.ColWidth(0,2500)
+Gui.F_Assign_Parts.gsfgParts.TextMatrix(1,0,"Loc")
+Gui.F_Assign_Parts.gsfgParts.ColWidth(1,500)
+Gui.F_Assign_Parts.gsfgParts.TextMatrix(2,0,"Description")
+Gui.F_Assign_Parts.gsfgParts.ColWidth(2,3000)
+Gui.F_Assign_Parts.gsfgParts.TextMatrix(3,0,"")
+Gui.F_Assign_Parts.gsfgParts.ColWidth(3,600)
+
+Gui.F_Assign_Parts.gsfgParts.FixedRows(1)
+F.Intrinsic.Control.For(V.Local.iC,0,2,1)
+	Gui.F_Assign_Parts.gsfgParts.BuildStyle(1,V.Local.iC,"format","alignment","2")
+	Gui.F_Assign_Parts.gsfgParts.BuildStyle(1,V.Local.iC,"type","locked","true")
+F.Intrinsic.Control.Next(V.Local.iC)
+Gui.F_Assign_Parts.gsfgParts.BuildStyle(1,3,"type","Command","Delete")
+Gui.F_Assign_Parts.gsfgParts.BuildStyle(1,3,"type","locked","true")
+
+F.Intrinsic.Control.For(V.Local.iC,0,3,1)
+	Gui.F_Assign_Parts.gsfgParts.BuildStyle(2,V.Local.iC,"format","alignment","2")
+	Gui.F_Assign_Parts.gsfgParts.BuildStyle(2,V.Local.iC,"type","locked","true")
+F.Intrinsic.Control.Next(V.Local.iC)
+
+F.Intrinsic.Control.CallSub("Hash")
+F.Intrinsic.UI.CloseWaitDialog
+Gui.F_Tool_Type_Maint..Show
+
+Program.Sub.Main.End
+
+program.sub.f_tool_type_maint_unload.start
+F.ODBC.Connection!conx.Close
+F.Intrinsic.Control.End
+
+program.sub.f_tool_type_maint_unload.end
+
+program.sub.cmdtooltype_click.start
+V.Local.sCol.Declare(String)
+V.Local.sColW.Declare(String)
+V.Local.sQuery.Declare(String)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.String.Split("Tool ID*!*Tool Type","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("1000*!*3000","*!*",V.Local.sColW)
+V.Local.sQuery.Set("SELECT TOOL_ID,TOOL_TYPE FROM ATG_3131_TOOL_TYPE_H ORDER BY TOOL_TYPE ASC")
+
+F.Intrinsic.UI.Browser("Select a tool type","conx",V.Local.sQuery,V.Local.sCol,V.Local.sColW,5000,5000,V.Local.sRet)
+Gui.F_Tool_Type_Maint..Enabled(False)
+Gui.F_Tool_Type_Maint.gsfgFields.Enabled(False)
+Gui.F_Tool_Type_Maint..Visible(False)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_Tool_Type_Maint.txtID.Text(V.Local.sRet(0))
+	Gui.F_Tool_Type_Maint.txtID.SetMetaData(V.Local.sRet(0),V.Local.sRet(0))
+	Gui.F_Tool_Type_Maint.txtName.Text(V.Local.sRet(1))
+
+	F.Intrinsic.UI.InvokeWaitDialog("Loading ... ","Loading")
+	F.Intrinsic.Control.CallSub("Load")
+	F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.EndIf
+Gui.F_Tool_Type_Maint..Enabled(True)
+Gui.F_Tool_Type_Maint.gsfgFields.Enabled(True)
+Gui.F_Tool_Type_Maint..Visible(True)
+
+program.sub.cmdtooltype_click.end
+
+Program.Sub.Load.Start
+V.Local.iR.Declare(Long)
+V.local.iRows.Declare(Long)
+V.local.sQuery.Declare(String)
+V.Local.iField.Declare(Long)
+
+Gui.F_Tool_Type_Maint.gsfgFields.Rows(1)
+Gui.F_Tool_Type_Maint.gsfgFields.Rows(2)
+Gui.F_Tool_Type_Maint.gsfgFields.ApplyStyle(1,1)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedCols(1)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedRows(1)
+V.Local.iRows.Set(1)
+F.Intrinsic.String.Concat("SELECT TOP 1 FIELD_ID FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1," ORDER BY FIELD_ID DESC",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstLoad",V.Local.sQuery)
+F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.EOF,<>,True)
+	V.Local.iField.Set(V.ODBC.conx!rstLoad.FieldValTrim!FIELD_ID)
+F.Intrinsic.Control.Else
+	Gui.F_Tool_Type_Maint.gsfgFields.Rows(2)
+	Gui.F_Tool_Type_Maint.gsfgFields.ApplyStyle(1,1)
+
+	Gui.F_Tool_Type_Maint.gsfgFields.FixedCols(1)
+	Gui.F_Tool_Type_Maint.gsfgFields.FixedRows(1)
+	F.ODBC.conx!rstLoad.Close
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rstLoad.Close
+
+F.Intrinsic.String.Concat("SELECT FIELD_ID, LABEL, FORMAT,FIELD_SIZE, IF (JUSTIFIED=0,'LEFT','RIGHT')JUSTIFIED FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1," ORDER BY FIELD_ID ASC",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstTool",V.Local.sQuery)
+Gui.F_Tool_Type_Maint.gsfgFields.LoadRecordset("conx!rstTool",1)
+F.ODBC.conx!rstTool.Close
+
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type_Maint!gsfgFields.Rows,-1,V.Local.iRows)
+F.Intrinsic.Control.If(V.Local.iRows,>,1)
+	Gui.F_Tool_Type_Maint.gsfgFields.Rows(V.Local.iRows)
+F.Intrinsic.Control.EndIf
+
+Gui.F_Tool_Type_Maint.gsfgFields.FixedCols(1)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedRows(1)
+
+Program.Sub.Load.End
+
+program.sub.cmddelete_click.start
+V.Local.sQuery.Declare(String)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type_Maint!txtName.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'Deletes all tool types and parts assigned for selected tool type
+F.Intrinsic.UI.Msgbox("Are you sure you want to delete this tool type?  Deleting it will delete all part fields associated with this type.","Delete Tool Type",4,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,6)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Gui.F_Tool_Type_Maint..Enabled(false)
+Gui.F_Tool_Type_Maint.cmdDelete.Enabled(False)
+
+F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_TYPE_H WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1,V.Local.sQuery)
+F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+
+F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1,V.Local.sQuery)
+F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+
+F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1,V.Local.sQuery)
+F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+
+Gui.F_Tool_Type_Maint.gsfgFields.Rows(1)
+Gui.F_Tool_Type_Maint.gsfgFields.Rows(2)
+Gui.F_Tool_Type_Maint.gsfgFields.FixedRows(1)
+
+Gui.F_Tool_Type_Maint..Enabled(True)
+Gui.F_Tool_Type_Maint.cmdDelete.Enabled(True)
+
+program.sub.cmddelete_click.end
+
+program.sub.f_tool_type_maint_resize.start
+V.Local.gWidth.Declare(Long)
+V.Local.iWidth.Declare(Long)
+V.Local.iHeight.Declare(Long)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type_Maint.Height,<,4000)
+	Gui.F_Tool_Type_Maint..Size(V.Screen.F_Tool_Type_Maint.Width,4000)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type_Maint.Width,<,6600)
+	Gui.F_Tool_Type_Maint..Size(6600,V.Screen.F_Tool_Type_Maint.Height)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type_Maint.Width,-650,V.Local.iWidth)
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type_Maint.Height,-2000,V.Local.iHeight)
+Gui.F_Tool_Type_Maint.gsfgFields.Size(V.Local.iWidth,V.Local.iHeight)
+
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type_Maint!gsfgFields.Height,900,V.Local.iHeight)
+'Gui.F_Tool_Type_Maint.cmdAdd.Position(V.Screen.F_Tool_Type_Maint!cmdAdd.Left,V.Local.iHeight)
+Gui.F_Tool_Type_Maint.cmdDelete.Position(V.Screen.F_Tool_Type_Maint!cmdDelete.Left,V.Local.iHeight)
+Gui.F_Tool_Type_Maint.cmdParts.Position(V.Screen.F_Tool_Type_Maint!cmdParts.Left,V.Local.iHeight)
+Gui.F_Tool_Type_Maint.cmdUploadParts.Position(V.Screen.F_Tool_Type_Maint!cmdUploadParts.Left,V.Local.iHeight)
+Gui.F_Tool_Type_Maint.cmdUpload.Position(V.Screen.F_Tool_Type_Maint!cmdUpload.Left,V.Local.iHeight)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type_Maint!gsfgFields.Width,>,5950)
+	F.Intrinsic.Math.Add(V.Screen.F_Tool_Type_Maint!gsfgFields.Width,-2200,V.Local.gWidth)
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.6666667,V.Local.iWidth)
+	Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(1,V.Local.iWidth)
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.3333333,V.Local.iWidth)
+	Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(2,V.Local.iWidth)
+F.Intrinsic.Control.Else
+	Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(1,2500)
+	Gui.F_Tool_Type_Maint.gsfgFields.ColWidth(2,1250)
+F.Intrinsic.Control.EndIf
+
+program.sub.f_tool_type_maint_resize.end
+
+program.sub.cmdupload_click.start
+
+Gui.F_Tool_Type_Maint..Visible(False)
+Gui.F_Upload_Tool_Types.optNoOverwrite.Value(1)
+Gui.F_Upload_Tool_Types.optNoPartChange.Value(1)
+Gui.F_Upload_Tool_Types..Show
+
+program.sub.cmdupload_click.end
+
+program.sub.cmdparts_click.start
+
+'Shows all parts currently assigned to the selected tool type
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type_Maint!txtName.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Select a Tool Type to assign parts")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Gui.F_Tool_Type_Maint..Visible(False)
+
+F.Intrinsic.Control.CallSub("LoadAssignedParts")
+
+Gui.F_Assign_Parts..Show
+
+program.sub.cmdparts_click.end
+
+program.sub.f_assign_parts_unload.start
+Gui.F_Assign_Parts..Visible(False)
+gui.F_Tool_Type_Maint..Visible(True)
+
+program.sub.f_assign_parts_unload.end
+
+program.sub.f_assign_parts_resize.start
+V.Local.height.Declare(Long)
+V.Local.width.Declare(Long)
+V.Local.gWidth.Declare(Long)
+
+F.Intrinsic.Control.If(V.Screen.F_Assign_Parts.Height,<,4000)
+	Gui.F_Assign_Parts..size(V.Screen.F_Assign_Parts.Width,4000)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_Assign_Parts.Width,<,7600)
+	Gui.F_Assign_Parts..Size(7600,V.Screen.F_Assign_Parts.Height)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Math.Add(V.Screen.F_Assign_Parts.Height,-1950,V.Local.height)
+F.Intrinsic.Math.Add(V.Screen.F_Assign_Parts.Width,-650,V.Local.width)
+Gui.F_Assign_Parts.gsfgParts.Size(V.Local.width,V.Local.height)
+
+F.Intrinsic.Math.Add(V.Screen.F_Assign_Parts!gsfgParts.Height,900,V.Local.height)
+Gui.F_Assign_Parts.cmdAddPart.Position(V.Screen.F_Assign_Parts!cmdAddPart.Left,V.Local.height)
+
+F.Intrinsic.Control.If(V.Screen.F_Assign_Parts!gsfgParts.Width,>,6950)
+	F.Intrinsic.Math.Add(V.Screen.F_Assign_Parts!gsfgParts.Width,-950,V.Local.gWidth)
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.4166667,V.Local.width)
+	Gui.F_Assign_Parts.gsfgParts.ColWidth(0,V.Local.width)
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.0833333,V.Local.width)
+	Gui.F_Assign_Parts.gsfgParts.ColWidth(1,V.Local.width)
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.5,V.Local.width)
+	Gui.F_Assign_Parts.gsfgParts.ColWidth(2,V.Local.width)
+F.Intrinsic.Control.Else
+	Gui.F_Assign_Parts.gsfgParts.ColWidth(0,2500)
+	Gui.F_Assign_Parts.gsfgParts.ColWidth(1,500)
+	Gui.F_Assign_Parts.gsfgParts.ColWidth(2,3000)
+F.Intrinsic.Control.EndIf
+
+program.sub.f_assign_parts_resize.end
+
+program.sub.gsfgparts_commandclick.start
+V.Local.sRet.Declare(String)
+V.Local.sQuery.Declare(String)
+
+Gui.F_Assign_Parts..Enabled(False)
+F.Intrinsic.string.Concat("Are you sure you want to unassign this part from Tool Type ",V.Screen.F_Assign_Parts!txtName.Text.trim,"?  Doing so will delete all tool type fields for this part.",V.Local.sQuery)
+F.Intrinsic.UI.Msgbox(V.Local.sQuery,"Assign part",4,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,=,6)
+	Gui.F_Assign_Parts.gsfgParts.ReadRow(V.Args.key,V.Local.sRet)
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Local.sRet(0),"' AND LOC='",V.Local.sRet(1),"'",V.Local.sQuery)
+	F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+	Gui.F_Assign_Parts.gsfgParts.RowHeight(V.Args.key,0)
+	Gui.F_Assign_Parts.gsfgParts.ApplyStyle(V.Args.key,2)
+F.Intrinsic.Control.EndIf
+Gui.F_Assign_Parts..Enabled(True)
+
+program.sub.gsfgparts_commandclick.end
+
+program.sub.cmduploadtooltypes_click.start
+
+V.Local.sFile.Declare(String)
+V.Local.sXLS.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.sCols.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.iR.Declare(Long)
+V.Local.iS.Declare(Long)
+V.Local.iTool.Declare(Long)
+V.Local.sToolType.Declare(String)
+V.Local.sQuery.Declare(String)
+V.Local.iField.Declare(Long,0)
+V.Local.iFields.Declare(Long)
+V.Local.sStatus.Declare(String)
+V.Local.iPartHandling.Declare(Long,0)
+V.Local.iDuplicateHandling.Declare(Long,0)
+V.Local.iPartPrompt.Declare(Long,0)
+V.Local.iDuplicatePrompt.Declare(Long,0)
+V.Local.sParts.Declare(String)
+V.Local.sParts.Redim(-1,-1)
+V.Local.iUB.Declare(Long,-1)
+V.Local.sPartString.Declare(String)
+V.Local.iCount.Declare(Long)
+V.Local.bWrite.Declare(Boolean)
+V.Local.iTemp.Declare(Long)
+
+Gui.F_Upload_Tool_Types..Visible(False)
+V.Local.sFile.Set(V.Screen.F_Upload_Tool_Types!txtUpload.Text)
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Control.If(V.Screen.F_Upload_Tool_Types!optOverwrite.Value,=,True)
+	V.Local.iDuplicateHandling.Set(1)
+F.Intrinsic.Control.Else
+	V.Local.iDuplicateHandling.Set(0)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.F_Upload_Tool_Types!optDeleteParts.Value,=,True)
+	V.Local.iPartHandling.Set(1)
+F.Intrinsic.Control.ElseIf(V.Screen.F_Upload_Tool_Types!optClearFields.Value,=,True)
+	V.Local.iPartHandling.Set(2)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.InvokeWaitDialog("Uploading...","Uploading Tool Types")
+'F.Automation.OOCalc.ReadSpreadsheet(V.Local.sFile,True,4,102,V.Local.sXLS)
+F.Automation.MSExcel.ReadSpreadsheet(V.Local.sFile,4,102,V.Local.sXLS)
+
+F.Intrinsic.Debug.Stop
+F.Intrinsic.String.Split(V.Local.sXLS,"&^&",V.Local.sXLS)
+F.Intrinsic.Control.For(V.Local.iS,0,V.Local.sXLS.UBound,1)
+	F.Intrinsic.String.Split(V.Local.sXLS(v.Local.iS),"$!$",V.Local.sRows)
+	F.Intrinsic.String.Split(V.Local.sRows(0),"*!*",V.local.sCols)
+	F.Intrinsic.Control.If(V.Local.sCols(1),<>,"")
+		F.Intrinsic.String.Left(V.Local.sCols(1),50,V.Local.sToolType)
+	F.Intrinsic.Control.Else
+		F.intrinsic.string.instr(V.local.sCols(0),"-",0,V.local.iTemp)
+		F.Intrinsic.Math.Sub(V.Local.sCols(0).Length,V.Local.iTemp,V.Local.iTemp)
+		F.Intrinsic.String.Right(V.Local.sCols(0),V.Local.iTemp,V.Local.sToolType)
+		V.Local.sToolType.Set(V.Local.sToolType.Trim)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.String.Split(V.Local.sRows(1),"*!*",V.Local.sCols)
+	F.Intrinsic.Control.If(V.Local.sCols(0).UCase,<>,"FIELD NAME")
+		'Checks to see if the .xls is a Tool Type upload
+		F.Intrinsic.UI.Msgbox(".XLS selected is not a tool type upload file.")
+		F.Intrinsic.UI.CloseWaitDialog
+		Gui.F_Tool_Type_Maint..Visible(True)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	V.Local.bWrite.Set(True)
+	F.Intrinsic.String.Concat("SELECT * FROM ATG_3131_TOOL_TYPE_H WHERE TOOL_TYPE='",V.Local.sToolType,"'",V.Local.sQuery)
+	F.ODBC.Connection!conx.OpenRecordsetRW("rstTool",V.Local.sQuery)
+	F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,=,True)
+		F.ODBC.conx!rstTool.AddNew
+		F.ODBC.conx!rstTool.Set!USER_ENTERED(V.Caller.User)
+		F.ODBC.conx!rstTool.Set!TOOL_TYPE(V.Local.sToolType)
+		F.ODBC.conx!rstTool.Update
+		F.ODBC.conx!rstTool.Close
+		
+		F.Intrinsic.String.Concat("SELECT TOP 1 * FROM ATG_3131_TOOL_TYPE_H WHERE USER_ENTERED='",V.Caller.User,"' ORDER BY TOOL_ID DESC",V.Local.sQuery)
+		F.ODBC.connection!conx.OpenRecordsetRO("rstTool",V.Local.sQuery)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,<>,True)
+			V.Local.iTool.Set(V.ODBC.conx!rstTool.FieldValTrim!TOOL_ID)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		V.Local.iTool.Set(V.ODBC.conx!rstTool.FieldValTrim!TOOL_ID)
+		F.Intrinsic.Control.If(V.Local.iDuplicateHandling,=,0)
+			V.Local.bWrite.Set(False)
+		F.Intrinsic.Control.Endif
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstTool.Close
+	
+	F.Intrinsic.Control.If(V.Local.bWrite,=,True)
+		F.Intrinsic.Control.If(V.Local.iPartHandling,=,1)
+			'Delete all parts assigned to tool Types if option is selected
+			F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID=",V.Local.iTool,V.Local.sQuery)
+			F.ODBC.connection!conx.Execute(V.Local.sQuery)
+		F.Intrinsic.Control.ElseIf(V.Local.iPartHandling,=,2)
+			'Clears tool fields assigned to tool type if option is selected
+			F.Intrinsic.Control.CallSub("ClearPartFields","iTool",V.Local.iTool)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Math.Add(V.Local.sRows.UBound,-1,V.Local.iFields)
+		V.Local.iField.Set(0)
+		F.Intrinsic.String.Concat("Uploading Tool Type ",V.Local.sToolType,"...",V.Local.sStatus)
+		F.Intrinsic.Control.For(V.Local.iR,2,V.Local.sRows.UBound,1)
+			F.Intrinsic.Math.Add(V.Local.iField,1,V.Local.iField)
+			F.Intrinsic.Control.If(V.Local.iField,<,101)
+				F.Intrinsic.String.Split(V.Local.sRows(v.Local.iR),"*!*",V.Local.sCols)
+				
+				F.Intrinsic.String.Concat("SELECT * FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID=",V.Local.iTool," AND FIELD_ID=",V.Local.iField,V.Local.sQuery)
+				F.ODBC.connection!conx.OpenRecordsetRW("rstTool",V.Local.sQuery)
+				F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,=,True)
+					F.ODBC.conx!rstTool.AddNew
+					F.ODBC.conx!rstTool.Set!TOOL_ID(V.Local.iTool)
+					F.ODBC.conx!rstTool.Set!FIELD_ID(V.Local.iField)
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.String.Left(V.Local.sCols(0),50,V.Local.sCols(0))
+				F.ODBC.conx!rstTool.Set!LABEL(V.Local.sCols(0))
+				F.ODBC.conx!rstTool.Set!FORMAT(V.Local.sCols(1))
+				F.Intrinsic.Control.If(V.Local.sCols(1).Trim,=,"Alpha (Y or N)")
+					F.ODBC.conx!rstTool.Set!FIELD_SIZE(1)
+				F.Intrinsic.Control.Else
+					F.ODBC.conx!rstTool.Set!FIELD_SIZE(V.Local.sCols(2))
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.If(V.local.sCols(3).UCase,=,"RIGHT")
+					F.ODBC.conx!rstTool.Set!JUSTIFIED(1)
+				F.Intrinsic.Control.Else
+					F.ODBC.conx!rstTool.Set!JUSTIFIED(0)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conx!rstTool.Update
+				F.ODBC.conx!rstTool.Close
+
+				F.Intrinsic.UI.ChangeWaitStatus(V.Local.sStatus,V.Local.iField,1,V.Local.iFields)
+				F.Intrinsic.Debug.Stop
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iR)
+
+		F.Intrinsic.Debug.Stop
+		F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID=",V.Local.iTool," AND FIELD_ID>",V.Local.iField,V.Local.sQuery)
+		F.ODBC.connection!conx.Execute(V.Local.sQuery)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iS)
+F.Intrinsic.UI.ChangeWaitStatus("Uploading...")
+F.Intrinsic.UI.CloseWaitDialog
+Gui.F_Tool_Type_Maint..Visible(True)
+
+
+program.sub.cmduploadtooltypes_click.end
+
+program.sub.f_upload_tool_types_unload.start
+Gui.F_Upload_Tool_Types..Visible(False)
+gui.F_Tool_Type_Maint..Visible(True)
+
+program.sub.f_upload_tool_types_unload.end
+
+program.sub.f_upload_parts_unload.start
+Gui.F_Upload_Parts..Visible(false)
+Gui.F_Tool_Type_Maint..Visible(True)
+
+program.sub.f_upload_parts_unload.end
+
+program.sub.cmduploadparts_click.start
+
+Gui.F_Tool_Type_Maint..Visible(False)
+Gui.F_Upload_Parts.optDoNotDeleteParts.Value(1)
+Gui.F_Upload_Parts.optDoNotOverwritePart.Value(1)
+Gui.F_Upload_Parts..Show
+
+program.sub.cmduploadparts_click.end
+
+program.sub.cmdtoolfile_click.start
+V.Local.sFile.Declare(String)
+
+F.Intrinsic.UI.ShowOpenFileDialog("","*.xls","C:\",V.Local.sFile)
+gui.F_Upload_Tool_Types.txtUpload.Text(V.Local.sFile)
+
+program.sub.cmdtoolfile_click.end
+
+program.sub.cmdpartfile_click.start
+V.Local.sFile.Declare(String)
+
+F.Intrinsic.UI.ShowOpenFileDialog("","*.xls","C:\",V.Local.sFile)
+Gui.F_Upload_Parts.txtUpload.Text(V.Local.sFile)
+
+program.sub.cmdpartfile_click.end
+
+program.sub.cmduploadpartsfile_click.start
+V.Local.sFile.Declare(String)
+V.Local.sXLS.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.sCols.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.iR.Declare(Long)
+V.Local.iS.Declare(Long)
+V.Local.iTool.Declare(Long)
+V.Local.sToolType.Declare(String)
+V.Local.sQuery.Declare(String)
+V.Local.iField.Declare(Long,0)
+V.Local.iFields.Declare(Long)
+V.Local.sStatus.Declare(String)
+V.Local.iPartHandling.Declare(Long,0)
+V.Local.iDuplicateHandling.Declare(Long,0)
+V.Local.bWrite.Declare(Boolean)
+V.Local.sPart.Declare(String)
+V.Local.sLoc.Declare(String)
+V.Local.iTemp.Declare(String)
+V.Local.sTools.Declare(String)
+V.Local.sTools.Redim(-1,-1)
+V.Local.iUB.Declare(Long,-1)
+V.Local.iWaitUB.Declare(Long)
+V.Local.iWait.Declare(Long)
+V.Local.iFieldUB.Declare(Long)
+V.Local.iPartNo.Declare(String)
+V.Local.iPartNo.Redim(0,1)
+V.Local.sErrors.Declare(String)
+
+'Reads a parts upload spreadsheet and adds them to Tool Types
+
+Gui.F_Upload_Parts..Visible(False)
+V.Local.sFile.Set(V.Screen.F_Upload_Parts!txtUpload.Text)
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Control.If(V.Screen.F_Upload_Parts!optOverwritePart.Value,=,True)
+	V.Local.iDuplicateHandling.Set(1)
+F.Intrinsic.Control.Else
+	V.Local.iDuplicateHandling.Set(0)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.F_Upload_Parts!optDeleteAllParts.Value,=,True)
+	V.Local.iPartHandling.Set(1)
+F.Intrinsic.Control.Else
+	V.Local.iPartHandling.Set(0)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.F_Upload_Parts!txtCol.Text,=,"")
+	Gui.F_Upload_Parts.txtCol.Text(100)
+F.Intrinsic.Control.ElseIf(V.Screen.F_Upload_Parts!txtCol.Text,>,100)
+	Gui.F_Upload_Parts.txtCol.Text(100)
+F.Intrinsic.Control.ElseIf(V.Screen.F_Upload_Parts!txtCol.Text,<,2)
+	Gui.F_Upload_Parts.txtCol.Text(2)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.F_Upload_Parts!txtRow.Text,=,"")
+	Gui.F_Upload_Parts.txtRow.Text(103)
+'F.Intrinsic.Control.ElseIf(V.Screen.F_Upload_Parts!txtRow.Text,>,103)
+'	Gui.F_Upload_Parts.txtRow.Text(103)
+'F.Intrinsic.Control.ElseIf(V.Screen.F_Upload_Parts!txtRow.Text,<,4)
+'	Gui.F_Upload_Parts.txtRow.Text(4)
+F.Intrinsic.Control.EndIf
+
+'V.Local.sErrors.Set("ERROR! The parts for the following Tool Types were not uploaded:")
+
+F.Intrinsic.UI.InvokeWaitDialog("Reading .XLS...","Uploading parts to tool types...")
+'F.Automation.OOCalc.ReadSpreadsheet(V.Local.sFile,True,100,104,V.Local.sXLS)
+'F.Automation.OOCalc.ReadSpreadsheet(V.Local.sFile,True,V.Screen.F_Upload_Parts!txtCol.Text,V.Screen.F_Upload_Parts!txtRow.Text,V.Local.sXLS)
+F.Automation.MSExcel.ReadSpreadsheet(V.Local.sFile,V.Screen.F_Upload_Parts!txtCol.Text,V.Screen.F_Upload_Parts!txtRow.Text,V.Local.sXLS)
+
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Control.If(V.Local.iPartHandling,=,1)
+	F.Intrinsic.Control.CallSub("ClearPartsFromToolTypes","sXLS",V.Local.sXLS)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Split(V.Local.sXLS,"&^&",V.Local.sXLS)
+F.Intrinsic.Control.For(V.Local.iS,0,V.Local.sXLS.UBound,1)
+'	F.Intrinsic.Debug.InvokeDebugger
+	F.Intrinsic.Debug.Stop
+	F.Intrinsic.String.Split(V.Local.sXLS(v.Local.iS),"$!$",V.Local.sRows)
+	F.Intrinsic.String.Split(V.Local.sRows(0),"*!*",V.local.sCols)
+	F.Intrinsic.String.Left(V.Local.sCols(0),50,V.Local.sToolType)
+	V.Local.sToolType.Set(V.Local.sToolType.Trim)
+	F.Intrinsic.String.Split(V.Local.sRows(1),"*!*",V.local.sCols)
+	F.Intrinsic.Control.If(V.Local.sCols(0).UCase,<>,"")
+		'checks to verify this is a parts upload sheet
+		F.Intrinsic.UI.Msgbox(".XLS selected is not a part upload file.")
+		F.Intrinsic.UI.CloseWaitDialog
+		Gui.F_Tool_Type_Maint..Visible(True)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+	V.Local.iPartNo(0).Set("-1")
+	V.Local.iPartNo(1).Set("-1")
+	F.Intrinsic.Debug.Stop
+	F.Intrinsic.String.Split(V.Local.sRows(2),"*!*",V.Local.sCols)
+	'Makes sure that Location and Tool Number are in the fields of each sheet, otherwise it will not upload that sheet
+	F.Intrinsic.Control.For(V.Local.iC,0,V.Local.sCols.UBound,1)
+		F.Intrinsic.Control.If(V.Local.iPartNo(0),<>,"-1")
+			F.Intrinsic.Control.If(V.Local.iPartNo(1),<>,"-1")
+				F.Intrinsic.Control.ExitFor(V.Local.iC)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.Control.If(V.Local.sCols(v.Local.iC).UCASE,=,"LOCATION")
+					V.Local.iPartNo(1).Set(V.Local.iC.String)
+					F.Intrinsic.Control.ExitFor(V.Local.iC)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.If(V.Local.sCols(v.Local.iC).UCASE,=,"TOOL NUMBER")
+				V.Local.iPartNo(0).Set(V.Local.iC.String)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iC)
+	F.Intrinsic.Math.Add(V.Local.sRows.UBound,-3,V.Local.iWaitUB)
+	F.Intrinsic.Math.Add(V.Local.sCols.UBound,1,V.Local.iFieldUB)
+	F.Intrinsic.Math.mult(V.Local.iFieldUB,V.Local.iWaitUB,V.Local.iWaitUB)
+
+	'If cannot find Tool ID for Tool Type, skips that sheet
+	F.Intrinsic.String.Concat("SELECT * FROM ATG_3131_TOOL_TYPE_H WHERE TOOL_TYPE='",V.Local.sToolType,"'",V.Local.sQuery)
+	F.ODBC.Connection!conx.OpenRecordsetRW("rstTool",V.Local.sQuery)
+	F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,=,True)
+		F.Intrinsic.String.Concat(V.Local.sErrors,V.Ambient.NewLine,V.Local.sToolType,": Tool Type does not exist.",V.Local.sErrors)
+		V.Local.iTool.Set(-1)
+'		F.Intrinsic.Control.Next(V.Local.iS)
+	F.Intrinsic.Control.Else
+		V.Local.iTool.Set(V.ODBC.conx!rstTool.FieldValTrim!TOOL_ID)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstTool.Close
+	
+	V.Local.iWait.Set(0)
+	F.Intrinsic.Control.If(V.Local.iTool,<>,-1)
+'		F.Intrinsic.Control.if(V.Local.iDuplicateHandling,=,1)
+'			'If overwrite duplicate parts is selected, deletes old part
+'			F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Local.sPart,"' AND LOC='",V.Local.sLoc,"'",V.Local.sQuery)
+'			F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+'		F.Intrinsic.Control.EndIf
+		'delete all parts before uploading Tool Type if option is selected
+		F.Intrinsic.Control.If(V.Local.iPartHandling,=,1)
+
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Debug.Stop
+		F.Intrinsic.Control.If(V.Local.iPartNo(1),<>,-1)
+			F.Intrinsic.Control.For(V.Local.iR,3,V.Local.sRows.UBound,1)
+				F.Intrinsic.String.Split(V.Local.sRows(V.Local.iR),"*!*",V.Local.sCols)
+				
+				F.Intrinsic.String.Left(V.Local.sCols(v.Local.iPartNo(0)),20,V.Local.sPart)
+				F.Intrinsic.String.Left(V.Local.sCols(v.Local.iPartNo(1)),6,V.Local.sLoc)
+				
+				F.Intrinsic.String.Concat("Uploading parts to tool type ",V.Local.sToolType,"...",V.Ambient.NewLine,"Uploading Part: ",V.Local.sPart,V.Ambient.NewLine,"Loc: ",V.Local.sLoc,V.Local.sStatus)
+				V.Local.bWrite.Set(False)
+				F.Intrinsic.String.Concat("SELECT * FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Local.sPart,"' AND LOC='",V.Local.sLoc,"'",V.Local.sQuery)
+				F.ODBC.Connection!conx.OpenRecordsetRW("rstParts",V.Local.sQuery)
+				F.Intrinsic.Control.If(V.ODBC.conx!rstParts.EOF,=,True)
+					V.Local.bWrite.Set(True)
+					F.ODBC.conx!rstParts.AddNew
+					F.ODBC.conx!rstParts.set!PART(V.Local.sPart)
+					F.ODBC.conx!rstParts.Set!LOC(V.Local.sLoc)
+				F.Intrinsic.Control.Else
+					'If overwrite duplicates is selected, write new part
+					F.Intrinsic.Control.if(V.Local.iDuplicateHandling,=,1)
+						V.Local.bWrite.Set(True)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+				
+				F.Intrinsic.Control.If(V.Local.bWrite,=,True)
+					F.ODBC.conx!rstParts.Set!TOOL_ID(V.Local.iTool)
+
+					V.Local.iField.Set(0)
+					F.Intrinsic.Control.For(V.Local.iC,0,V.Local.sCols.UBound,1)
+						F.Intrinsic.Math.Add(V.Local.iField,1,V.Local.iField)
+						F.Intrinsic.Control.If(V.Local.iField,<,101)
+							F.Intrinsic.String.Left(V.Local.sCols(v.Local.iC),100,V.Local.sCols(v.Local.iC))
+							F.ODBC.conx!rstParts.Set!FIELD_[v.local.iField](V.Local.sCols(v.Local.iC).RTrim)
+						F.Intrinsic.Control.EndIf
+						F.Intrinsic.Math.Add(V.Local.iWait,1,V.Local.iwait)
+						F.Intrinsic.UI.ChangeWaitStatus(V.Local.sStatus,V.Local.iWait,1,V.Local.iWaitUB)
+					F.Intrinsic.Control.Next(V.Local.iC)
+					F.ODBC.conx!rstParts.Update
+				F.Intrinsic.Control.Else
+					F.Intrinsic.Math.Add(V.Local.iWait,V.Local.iFieldUB,V.Local.iWait)
+					F.Intrinsic.UI.ChangeWaitStatus(V.Local.sStatus,V.Local.iWait,1,V.Local.iWaitUB)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conx!rstParts.Close
+			F.Intrinsic.Control.Next(V.Local.iR)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Debug.Stop
+			F.intrinsic.String.Concat(V.Local.sErrors,V.Ambient.NewLine,V.Local.sToolType,": Tool Number or Location fields could not be found.",V.Local.sErrors)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iS)
+F.Intrinsic.UI.ChangeWaitStatus("Uploading...")
+F.Intrinsic.UI.CloseWaitDialog
+F.Intrinsic.Control.If(V.Local.sErrors,<>,"")
+	F.Intrinsic.String.Concat("ERROR! The parts for the following Tool Types were not uploaded:",V.Local.sErrors,V.Local.sErrors)
+	F.Intrinsic.UI.Msgbox(V.Local.sErrors)
+F.Intrinsic.Control.endif
+Gui.F_Tool_Type_Maint..Visible(True)
+
+
+
+program.sub.cmduploadpartsfile_click.end
+
+Program.Sub.ClearPartFields.Start
+V.Local.sQuery.Declare(String)
+V.Local.iC.Declare(Long,0)
+
+'Clears all fields for tools in ATG_3131_TOOL_FIELDS
+F.Intrinsic.String.Concat("SELECT * FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID=",V.Args.iTool,V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRW("rstParts",V.Local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstParts.EOF,=,True)
+	F.Intrinsic.Control.For(V.Local.iC,1,100,1)
+		F.ODBC.conx!rstParts.set!FIELD_[v.local.iC]("")
+	F.Intrinsic.Control.Next(V.Local.iC)
+	F.ODBC.conx!rstParts.Update
+
+	F.ODBC.conx!rstParts.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conx!rstParts.Close
+
+Program.Sub.ClearPartFields.End
+
+Program.Sub.ClearPartsFromToolTypes.Start
+V.Local.sXLS.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sRows.Declare(String)
+V.Local.sCols.Declare(String)
+V.Local.iS.Declare(Long)
+V.Local.iTool.Declare(Long)
+V.Local.sToolType.Declare(String)
+V.Local.sQuery.Declare(String)
+V.Local.iTemp.Declare(String)
+V.Local.sTools.Declare(String)
+V.Local.sTools.Redim(-1,-1)
+V.Local.iUB.Declare(Long,-1)
+V.Local.bExists.Declare(Boolean)
+V.Local.iCount.Declare(Long)
+
+'Gets the Tool_ID from the Tool Type name then deletes all parts assigned to that tool ID
+F.Intrinsic.String.Split(V.args.sXLS,"&^&",V.Local.sXLS)
+F.Intrinsic.Control.For(V.Local.iS,0,V.Local.sXLS.UBound,1)
+	F.Intrinsic.String.Split(V.Local.sXLS(v.Local.iS),"$!$",V.Local.sRows)
+	F.Intrinsic.String.Split(V.Local.sRows(0),"*!*",V.local.sCols)
+	F.Intrinsic.String.Left(V.Local.sCols(0),50,V.Local.sToolType)
+	
+	V.Local.bExists.Set(False)
+	F.Intrinsic.Control.For(V.Local.iCount,0,V.Local.sTools.UBound,1)
+		F.Intrinsic.Control.If(V.Local.sTools(v.Local.iCount),=,V.Local.sToolType)
+			V.Local.bExists.Set(True)
+			F.Intrinsic.Control.ExitFor(V.Local.iCount)
+		F.Intrinsic.Control.Endif
+	F.Intrinsic.Control.Next(V.Local.iCount)
+
+	F.Intrinsic.Control.If(V.Local.bExists,=,False)
+		F.Intrinsic.Math.Add(V.Local.iUB,1,V.Local.iub)
+		F.Intrinsic.Control.If(V.Local.iUB,=,0)
+			V.Local.sTools.redim(0,0)
+		F.Intrinsic.Control.Else
+			V.Local.sTools.RedimPreserve(0,V.Local.iUB)
+		F.Intrinsic.Control.Endif
+		V.Local.sTools(v.Local.iUB).Set(V.Local.sToolType)
+
+		V.Local.iTool.Set(-1)
+		F.Intrinsic.String.Concat("SELECT * FROM ATG_3131_TOOL_TYPE_H WHERE TOOL_TYPE='",V.Local.sToolType,"'",V.Local.sQuery)
+		F.ODBC.Connection!conx.OpenRecordsetRW("rstTool",V.Local.sQuery)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,<>,True)
+			V.Local.iTool.Set(V.ODBC.conx!rstTool.FieldValTrim!TOOL_ID)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rstTool.Close
+
+		F.Intrinsic.Control.If(V.Local.iTool,<>,-1)
+			F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID=",V.Local.iTool,V.Local.sQuery)
+			F.ODBC.connection!conx.Execute(V.Local.sQuery)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iS)
+
+
+
+Program.Sub.ClearPartsFromToolTypes.End
+
+program.sub.cmdaddpart_click.start
+V.Local.sCol.Declare(String)
+V.Local.sColW.Declare(String)
+V.Local.sQuery.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iRows.Declare(Long)
+V.Local.iR.Declare(Long)
+V.Local.sMsg.Declare(String)
+V.Local.sAlign.Declare(String)
+V.Local.sFormat.Declare(String)
+
+'Modified for Quote 1580 -  Will allow user to enter non-inventory parts
+
+'Invokes a browser showing all parts to add to the selected Tool Type
+'F.Intrinsic.String.Split("Part*!*Loc*!*Description*!*Tool Type ID","*!*",V.Local.sCol)
+'F.Intrinsic.String.Split("2500*!*1000*!*3000*!*1000","*!*",V.Local.sColW)
+'F.Intrinsic.String.Split("0*!*0*!*0*!*0","*!*",V.Local.sAlign)
+'F.Intrinsic.String.Split("*!**!**!*","*!*",V.Local.sFormat)
+'F.Intrinsic.Control.CallSub("BuildPartBrowser","iTool",V.Screen.F_Tool_Type_Maint!txtID.MetaData1)
+
+'Function.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+'F.Intrinsic.UI.BrowserFromString("Select a part",V.Args.sPartString,"*!*","!*!",V.Local.sCol,V.Local.sColW,9000,5000,V.Local.sFormat,V.Local.sAlign,V.Local.sRet)
+
+Gui.F_Assign_Parts..Visible(False)
+Gui.F_Add_Part.txtPart.Text("")
+Gui.F_Add_Part.txtLoc.Text("")
+Gui.F_Add_Part.txtDescription.Text("")
+Gui.F_Add_Part..Show
+
+'F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+''	F.Intrinsic.Debug.InvokeDebugger
+'	F.Intrinsic.Debug.Stop
+'	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+'	F.Intrinsic.Control.If(V.Local.sRet(3).Trim,<>,"")
+'		'Deletes if already assigned
+'		F.Intrinsic.string.Concat("This part is already assigned.  Do you want to re-assign it to Tool Type ",V.Screen.F_Assign_Parts!txtName.Text.trim,"?  Doing so will delete all previous tool type fields for this part.",V.Local.sQuery)
+'		F.Intrinsic.UI.Msgbox(V.Local.sQuery,"Assign part",4,V.Local.sMsg)
+'		F.Intrinsic.Control.If(V.Local.sMsg,<>,6)
+'			Gui.F_Assign_Parts..Visible(True)
+'			F.Intrinsic.Control.ExitSub
+'		F.Intrinsic.Control.EndIf
+'		F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Local.sRet(0),"' AND LOC='",V.Local.sRet(1),"'",V.Local.sQuery)
+'		F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+'	F.Intrinsic.Control.EndIf
+'
+'	'Adds to gsfg
+'	F.Intrinsic.String.Concat("SELECT PART, LOC, TOOL_ID FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1,V.Local.sQuery)
+'	F.ODBC.Connection!conx.OpenRecordsetRO("rstTool",V.Local.sQuery)
+'	F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,=,True)
+'		Gui.F_Assign_Parts.gsfgParts.Rows(1)
+'		Gui.F_Assign_Parts.gsfgParts.Rows(2)
+'		V.Local.iR.Set(1)
+'	F.Intrinsic.Control.Else
+'		F.Intrinsic.Math.Add(V.Screen.F_Assign_Parts!gsfgParts.Rows,1,V.Local.iRows)
+'		Gui.F_Assign_Parts.gsfgParts.Rows(V.Local.iRows)
+'		F.Intrinsic.Math.Add(V.Local.iRows,-1,V.Local.iR)
+'	F.Intrinsic.Control.EndIf
+'	F.ODBC.conx!rstTool.Close
+'
+'	'adds to ATG_3131_TOOL_FIELDS
+'	F.Intrinsic.String.Concat("SELECT PART, LOC, TOOL_ID FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Local.sRet(0),"' AND LOC='",V.Local.sRet(1),"'",V.Local.sQuery)
+'	F.ODBC.Connection!conx.OpenRecordsetRW("rstPart",V.Local.sQuery)
+'	F.Intrinsic.Control.If(V.ODBC.conx!rstPart.EOF,=,True)
+'		F.ODBC.conx!rstPart.AddNew
+'		F.ODBC.conx!rstPart.Set!PART(V.Local.sRet(0))
+'		F.ODBC.conx!rstPart.Set!LOC(V.Local.sRet(1))
+'	F.Intrinsic.Control.EndIf
+'	F.ODBC.conx!rstPart.Set!TOOL_ID(V.Screen.F_Tool_Type_Maint!txtID.MetaData1)
+'	F.ODBC.conx!rstPart.Update
+'	F.ODBC.conx!rstPart.Close
+'
+'	Gui.F_Assign_Parts.gsfgParts.TextMatrix(0,V.Local.iR,V.Local.sRet(0))
+'	Gui.F_Assign_Parts.gsfgParts.TextMatrix(1,V.Local.iR,V.Local.sRet(1))
+'	Gui.F_Assign_Parts.gsfgParts.TextMatrix(2,V.Local.iR,V.Local.sRet(2))
+'	Gui.F_Assign_Parts.gsfgParts.ApplyStyle(V.Local.iR,1)
+'	Gui.F_Assign_Parts.gsfgParts.FixedRows(1)
+'F.Intrinsic.Control.EndIf
+'Gui.F_Assign_Parts..Visible(True)
+
+
+
+program.sub.cmdaddpart_click.end
+
+Program.Sub.Hash.Start
+V.Local.sQuery.Declare(String)
+V.Local.sTemp.Declare(String)
+
+'V.Local.sQuery.Set("SELECT DISTINCT PART, DESCRIPTION FROM INVENTORY_MSTR")
+'F.ODBC.connection!conx.OpenRecordsetRO("rstHash",V.Local.sQuery)
+'F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstHash.EOF,=,True)
+''	F.Intrinsic.Hash.LookupByKey("htDesc",V.ODBC.conx!rstHash.FieldValTrim!PART,True,V.Local.sTemp)
+''	F.Intrinsic.Control.If(V.Local.sTemp,=,"***NORETURN***")
+'		F.Intrinsic.Hash.AddItem("htDesc",V.ODBC.conx!rstHash.FieldValTrim!PART,V.ODBC.conx!rstHash.FieldValTrim!DESCRIPTION)
+''	F.Intrinsic.Control.EndIf
+'	F.ODBC.conx!rstHash.MoveNext
+'F.Intrinsic.Control.Loop
+'F.ODBC.conx!rstHash.Close
+
+V.Local.sQuery.Set("SELECT DISTINCT PART, TOOL_ID FROM ATG_3131_TOOL_FIELDS")
+F.ODBC.Connection!conx.OpenRecordsetRO("rstHash",V.Local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstHash.EOF,=,True)
+	F.Intrinsic.Hash.AddItem("htTool",V.ODBC.conx!rstHash.FieldValTrim!PART,V.ODBC.conx!rstHash.FieldValTrim!TOOL_ID)
+	F.ODBC.conx!rstHash.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conx!rstHash.Close
+
+Program.Sub.Hash.End
+
+Program.Sub.BuildPartBrowser.Start
+V.Local.sQuery.Declare(String)
+V.Local.sTempID.Declare(String)
+V.Local.iTool.Declare(Long)
+V.Local.sPartString.Declare(String)
+V.Local.sPartBuild.Declare(String)
+V.Local.sDesc.Declare(String)
+
+V.Local.iTool.Set(V.Args.iTool)
+'V.Local.sQuery.Set("SELECT DISTINCT PART, BIN FROM V_ITEM_MASTER")
+V.Local.sQuery.Set("SELECT DISTINCT B.PART, B.BIN, I.DESCRIPTION FROM V_ITEM_MASTER B LEFT JOIN V_INVENTORY_MSTR I ON I.PART=B.PART AND I.LOCATION=B.LOCATION ORDER BY PART ASC, BIN ASC")
+F.ODBC.Connection!conx.OpenRecordsetRO("rstItems",V.Local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstItems.EOF,=,True)
+	F.Intrinsic.Hash.LookupByKey("htTool",V.ODBC.conx!rstItems.FieldValTrim!PART,True,V.Local.sTempID)
+	F.Intrinsic.Control.If(V.Local.sTempID,<>,V.Local.iTool)
+'		F.Intrinsic.Hash.LookupByKey("htDesc",V.ODBC.conx!rstItems.FieldValTrim!PART,True,V.Local.sDesc)
+'		F.Intrinsic.Control.If(V.Local.sDesc,<>,"***NORETURN***")
+'			F.Intrinsic.String.Concat(V.ODBC.conx!rstItems.FieldValTrim!PART,"*!*",V.ODBC.conx!rstItems.FieldValTrim!BIN,"*!*",V.Local.sDesc,V.Local.sPartBuild)
+'		F.Intrinsic.Control.Else
+'			F.Intrinsic.String.Concat(V.ODBC.conx!rstItems.FieldValTrim!PART,"*!*",V.ODBC.conx!rstItems.FieldValTrim!BIN,"*!*"," ",V.Local.sPartBuild)
+'		F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Concat(V.ODBC.conx!rstItems.FieldValTrim!PART,"*!*",V.ODBC.conx!rstItems.FieldValTrim!BIN,"*!*",V.ODBC.conx!rstItems.FieldValTrim!DESCRIPTION,V.Local.sPartBuild)
+		F.Intrinsic.Control.If(V.Local.sTempID,<>,"***NORETURN***")
+			F.Intrinsic.String.Concat(V.Local.sPartBuild,"*!*",V.Local.sTempID,V.Local.sPartBuild)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Concat(V.Local.sPartBuild,"*!*"," ",V.Local.sPartBuild)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.If(V.Local.sPartString,<>,"")
+			F.Intrinsic.String.Concat(V.Local.sPartString,"!*!",V.Local.sPartBuild,V.Local.sPartString)
+		F.Intrinsic.Control.Else
+			V.Local.sPartString.Set(V.Local.sPartBuild)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstItems.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conx!rstItems.Close
+
+F.Intrinsic.Variable.AddRV("sPartString",V.Local.sPartString)
+
+Program.Sub.BuildPartBrowser.End
+
+program.sub.f_add_part_unload.start
+Gui.F_Add_Part..Visible(False)
+gui.F_Assign_Parts..Visible(True)
+
+program.sub.f_add_part_unload.end
+
+program.sub.cmdok_click.start
+V.Local.sQuery.Declare(String)
+V.Local.sMsg.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.F_Add_Part!txtPart.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Please enter a part")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Gui.F_Add_Part..Enabled(False)
+Gui.F_Add_Part.cmdOK.Enabled(False)
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+'Check to see if part exists
+F.Intrinsic.String.Concat("SELECT PART, LOC, DESCRIPTION, TOOL_ID FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Screen.F_Add_Part!txtPart.Text,"' AND LOC='",V.Screen.F_Add_Part!txtLoc.Text,"'",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstPart",V.Local.sQuery)
+F.Intrinsic.Control.If(V.ODBC.conx!rstPart.EOF,<>,True)
+	F.Intrinsic.Control.If(V.ODBC.conx!rstPart.FieldValTrim!TOOL_ID,=,V.Screen.F_Tool_Type_Maint!txtID.MetaData1)
+		F.Intrinsic.UI.Msgbox("This part is already assigned to this Tool Type")
+		F.ODBC.conx!rstPart.Close
+		Gui.F_Add_Part..Enabled(True)
+		Gui.F_Add_Part.cmdOK.Enabled(True)
+		F.Intrinsic.Control.CallSub("f_add_part_unload")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.Endif
+
+	F.Intrinsic.string.Concat("This part is already assigned.  Do you want to re-assign it to Tool Type ",V.Screen.F_Assign_Parts!txtName.Text.trim,"?  Doing so will delete all previous tool type fields for this part.",V.Local.sQuery)
+	F.Intrinsic.UI.Msgbox(V.Local.sQuery,"Assign part",4,V.Local.sMsg)
+	F.Intrinsic.Control.If(V.Local.sMsg,<>,6)
+		F.ODBC.conx!rstPart.Close
+		Gui.F_Add_Part..Enabled(True)
+		Gui.F_Add_Part.cmdOK.Enabled(True)
+		F.Intrinsic.Control.CallSub("f_add_part_unload")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstPart.Close
+
+	F.Intrinsic.String.Concat("DELETE FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Screen.F_Add_Part!txtPart.Text,"' AND LOC='",V.Screen.F_Add_Part!txtLoc.Text,"'",V.Local.sQuery)
+	F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+F.Intrinsic.Control.Else
+	F.ODBC.conx!rstPart.Close
+F.Intrinsic.Control.EndIf
+
+'Adds part to Table
+F.Intrinsic.String.Concat("SELECT PART, LOC, DESCRIPTION, TOOL_ID FROM ATG_3131_TOOL_FIELDS WHERE PART='",V.Screen.F_Add_Part!txtPart.Text,"' AND LOC='",V.Screen.F_Add_Part!txtLoc.Text,"'",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRW("rstPart",V.Local.sQuery)
+F.ODBC.conx!rstPart.AddNew
+F.ODBC.conx!rstPart.Set!PART(V.Screen.F_Add_Part!txtPart.Text)
+F.ODBC.conx!rstPart.Set!LOC(V.Screen.F_Add_Part!txtLoc.Text)
+F.ODBC.conx!rstPart.Set!DESCRIPTION(V.Screen.F_Add_Part!txtDescription.Text)
+F.ODBC.conx!rstPart.Set!TOOL_ID(V.Screen.F_Tool_Type_Maint!txtID.MetaData1)
+F.ODBC.conx!rstPart.Update
+F.ODBC.conx!rstPart.Close
+
+'Re-loads assigned parts grid
+F.Intrinsic.Control.CallSub("LoadAssignedParts")
+
+'Unloads
+F.Intrinsic.Control.CallSub("f_add_part_unload")
+
+Gui.F_Add_Part..Enabled(True)
+Gui.F_Add_Part.cmdOK.Enabled(True)
+
+
+program.sub.cmdok_click.end
+
+Program.Sub.LoadAssignedParts.Start
+V.Local.sQuery.Declare(String)
+V.Local.iRows.Declare(Long)
+
+f.Intrinsic.Control.If(V.Screen.F_Tool_Type_Maint!txtID.MetaData1.trim,=,"")
+	F.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.Elseif(V.Screen.F_Tool_Type_Maint!txtID.MetaData1.trim,=,"-1")
+	F.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...","Loading")
+Gui.F_Assign_Parts.txtID.Text(V.Screen.F_Tool_Type_Maint!txtID.Text)
+Gui.F_Assign_Parts.txtName.Text(V.Screen.F_Tool_Type_Maint!txtName.Text)
+Gui.F_Assign_Parts.gsfgParts.Rows(1)
+Gui.F_Assign_Parts.gsfgParts.Rows(2)
+Gui.F_Assign_Parts.gsfgParts.FixedRows(1)
+
+F.Intrinsic.String.Concat("SELECT PART, LOC, DESCRIPTION FROM ATG_3131_TOOL_FIELDS  WHERE TOOL_ID=",V.Screen.F_Tool_Type_Maint!txtID.MetaData1.trim,V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstParts",V.Local.sQuery)
+Gui.F_Assign_Parts.gsfgParts.LoadRecordset("conx!rstParts",1)
+F.ODBC.conx!rstParts.Close
+
+F.Intrinsic.Math.Add(V.Screen.F_Assign_Parts!gsfgParts.Rows,-1,V.Local.iRows)
+F.Intrinsic.Control.If(V.Local.iRows,>,1)
+	Gui.F_Assign_Parts.gsfgParts.Rows(V.Local.iRows)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.UI.CloseWaitDialog
+
+Program.Sub.LoadAssignedParts.End
+
+
+
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM$}$False
+Program.Sub.Comments.End
