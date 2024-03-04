@@ -1,0 +1,1197 @@
+Program.Sub.ScreenSU.Start
+
+Gui.F_Tool_Type..Create
+Gui.F_Tool_Type..Caption("Select a Tool Type")
+Gui.F_Tool_Type..Size(4800,5750)
+Gui.F_Tool_Type..Position(0,0)
+Gui.F_Tool_Type..AlwaysOnTop(False)
+Gui.F_Tool_Type..FontName("Arial")
+Gui.F_Tool_Type..FontSize(8)
+Gui.F_Tool_Type..ForeColor(0)
+Gui.F_Tool_Type..Backcolor(-2147483633)
+Gui.F_Tool_Type..ControlBox(True)
+Gui.F_Tool_Type..MaxButton(True)
+Gui.F_Tool_Type..MinButton(True)
+Gui.F_Tool_Type..MousePointer(0)
+Gui.F_Tool_Type..Moveable(True)
+Gui.F_Tool_Type..Sizeable(True)
+Gui.F_Tool_Type..ShowInTaskBar(True)
+Gui.F_Tool_Type..TitleBar(True)
+
+Gui.F_Tool_Type..Event(resize,f_tool_type_resize)
+Gui.F_Tool_Type..Event(unload,f_tool_type_unload)
+
+Gui.F_Tool_Type.gsfgToolType.Create(gsflexgrid)
+Gui.F_Tool_Type.gsfgToolType.Visible(True)
+Gui.F_Tool_Type.gsfgToolType.Size(4350,4700)
+Gui.F_Tool_Type.gsfgToolType.Zorder(0)
+Gui.F_Tool_Type.gsfgToolType.Position(100,100)
+Gui.F_Tool_Type.gsfgToolType.Enabled(True)
+Gui.F_Tool_Type.gsfgToolType.FixedRows(0)
+Gui.F_Tool_Type.gsfgToolType.FixedCols(0)
+
+Gui.F_Tool_Type.gsfgToolType.Event(commandclick,gsfgtooltype_commandclick)
+
+Gui.F_Tool_Type.chkShowAll.Create(checkbox)
+Gui.F_Tool_Type.chkShowAll.Alignment(0)
+Gui.F_Tool_Type.chkShowAll.Caption("Show all parts")
+Gui.F_Tool_Type.chkShowAll.Visible(True)
+Gui.F_Tool_Type.chkShowAll.Size(3405,255)
+Gui.F_Tool_Type.chkShowAll.Zorder(0)
+Gui.F_Tool_Type.chkShowAll.Position(100,4900)
+Gui.F_Tool_Type.chkShowAll.Enabled(True)
+Gui.F_Tool_Type.chkShowAll.FontName("Arial")
+Gui.F_Tool_Type.chkShowAll.FontSize(8)
+Gui.F_Tool_Type.chkShowAll.TabStop(True)
+Gui.F_Tool_Type.chkShowAll.TabIndex(1)
+Gui.F_Tool_Type.chkShowAll.Tooltip("")
+Gui.F_Tool_Type.chkShowAll.ControlGroup(0)
+Gui.F_Tool_Type.chkShowAll.DefaultValue("")
+
+
+Gui.F_Tool_Type.picSize.Create(picturebox)
+Gui.F_Tool_Type.picSize.Visible(True)
+Gui.F_Tool_Type.picSize.Size(1815,300)
+Gui.F_Tool_Type.picSize.Zorder(0)
+Gui.F_Tool_Type.picSize.Position(1800,4870)
+Gui.F_Tool_Type.picSize.Enabled(True)
+Gui.F_Tool_Type.picSize.FontName("Arial")
+Gui.F_Tool_Type.picSize.FontSize(8)
+Gui.F_Tool_Type.picSize.Backcolor(255)
+Gui.F_Tool_Type.picSize.Tooltip("")
+
+
+Gui.F_Tool..Create
+Gui.F_Tool..Caption("Tool")
+Gui.F_Tool..Size(7450,7775)
+Gui.F_Tool..Position(0,0)
+Gui.F_Tool..AlwaysOnTop(False)
+Gui.F_Tool..FontName("Arial")
+Gui.F_Tool..FontSize(8)
+Gui.F_Tool..ForeColor(0)
+Gui.F_Tool..Backcolor(-2147483633)
+Gui.F_Tool..ControlBox(True)
+Gui.F_Tool..MaxButton(True)
+Gui.F_Tool..MinButton(True)
+Gui.F_Tool..MousePointer(0)
+Gui.F_Tool..Moveable(True)
+Gui.F_Tool..Sizeable(True)
+Gui.F_Tool..ShowInTaskBar(True)
+Gui.F_Tool..TitleBar(True)
+
+Gui.F_Tool..Event(resize,f_tool_resize)
+Gui.F_Tool..Event(unload,f_tool_unload)
+
+Gui.F_Tool.gsfgTool.Create(gsflexgrid)
+Gui.F_Tool.gsfgTool.Visible(True)
+Gui.F_Tool.gsfgTool.Size(7000,7000)
+Gui.F_Tool.gsfgTool.Zorder(0)
+Gui.F_Tool.gsfgTool.Position(100,100)
+Gui.F_Tool.gsfgTool.Enabled(True)
+Gui.F_Tool.gsfgTool.FixedRows(0)
+Gui.F_Tool.gsfgTool.FixedCols(0)
+
+Gui.F_Tool.gsfgTool.Event(commandclick,gsfgtool_commandclick)
+
+Gui.F_Edit_Field..Create
+Gui.F_Edit_Field..Caption("Edit")
+Gui.F_Edit_Field..Size(7450,7775)
+Gui.F_Edit_Field..Position(0,0)
+Gui.F_Edit_Field..AlwaysOnTop(False)
+Gui.F_Edit_Field..FontName("Arial")
+Gui.F_Edit_Field..FontSize(8)
+Gui.F_Edit_Field..ForeColor(0)
+Gui.F_Edit_Field..Backcolor(-2147483633)
+Gui.F_Edit_Field..ControlBox(True)
+Gui.F_Edit_Field..MaxButton(False)
+Gui.F_Edit_Field..MinButton(True)
+Gui.F_Edit_Field..MousePointer(0)
+Gui.F_Edit_Field..Moveable(True)
+Gui.F_Edit_Field..Sizeable(False)
+Gui.F_Edit_Field..ShowInTaskBar(True)
+Gui.F_Edit_Field..TitleBar(True)
+
+Gui.F_Edit_Field..Event(unload,f_edit_field_unload)
+
+Gui.F_Edit_Field.frmAlpha.Create(frame)
+Gui.F_Edit_Field.frmAlpha.Caption("Frame")
+Gui.F_Edit_Field.frmAlpha.Visible(True)
+Gui.F_Edit_Field.frmAlpha.Size(2000,300)
+Gui.F_Edit_Field.frmAlpha.Zorder(0)
+Gui.F_Edit_Field.frmAlpha.Position(100,300)
+Gui.F_Edit_Field.frmAlpha.Enabled(True)
+Gui.F_Edit_Field.frmAlpha.BorderStyle(0)
+Gui.F_Edit_Field.frmAlpha.FontName("Arial")
+Gui.F_Edit_Field.frmAlpha.FontSize(8)
+Gui.F_Edit_Field.frmAlpha.Tooltip("")
+
+
+Gui.F_Edit_Field.txtEdit.Create(textbox)
+Gui.F_Edit_Field.txtEdit.Text("")
+Gui.F_Edit_Field.txtEdit.Visible(True)
+Gui.F_Edit_Field.txtEdit.Size(2000,300)
+Gui.F_Edit_Field.txtEdit.Zorder(0)
+Gui.F_Edit_Field.txtEdit.Position(100,300)
+Gui.F_Edit_Field.txtEdit.Enabled(True)
+Gui.F_Edit_Field.txtEdit.Alignment(0)
+Gui.F_Edit_Field.txtEdit.FontName("Arial")
+Gui.F_Edit_Field.txtEdit.FontSize(8)
+Gui.F_Edit_Field.txtEdit.Backcolor(-2147483643)
+Gui.F_Edit_Field.txtEdit.BorderStyle(1)
+Gui.F_Edit_Field.txtEdit.MaxLength(20)
+Gui.F_Edit_Field.txtEdit.TabStop(True)
+Gui.F_Edit_Field.txtEdit.TabIndex(1)
+Gui.F_Edit_Field.txtEdit.Tooltip("")
+Gui.F_Edit_Field.txtEdit.ControlGroup(0)
+Gui.F_Edit_Field.txtEdit.DefaultValue("")
+
+
+Gui.F_Edit_Field.cmdSave.Create(button)
+Gui.F_Edit_Field.cmdSave.Caption("Save")
+Gui.F_Edit_Field.cmdSave.Visible(True)
+Gui.F_Edit_Field.cmdSave.Size(855,375)
+Gui.F_Edit_Field.cmdSave.Zorder(0)
+Gui.F_Edit_Field.cmdSave.Position(100,700)
+Gui.F_Edit_Field.cmdSave.Enabled(True)
+Gui.F_Edit_Field.cmdSave.FontName("Arial")
+Gui.F_Edit_Field.cmdSave.FontSize(8)
+Gui.F_Edit_Field.cmdSave.TabStop(True)
+Gui.F_Edit_Field.cmdSave.TabIndex(2)
+Gui.F_Edit_Field.cmdSave.Tooltip("")
+Gui.F_Edit_Field.cmdSave.ControlGroup(0)
+Gui.F_Edit_Field.cmdSave.DefaultValue("")
+
+Gui.F_Edit_Field.cmdSave.Event(click,cmdsave_click)
+
+Gui.F_Edit_Field.dtpEdit.Create(datepicker)
+Gui.F_Edit_Field.dtpEdit.Visible(False)
+Gui.F_Edit_Field.dtpEdit.Size(2000,300)
+Gui.F_Edit_Field.dtpEdit.Zorder(0)
+Gui.F_Edit_Field.dtpEdit.Position(100,300)
+Gui.F_Edit_Field.dtpEdit.Enabled(False)
+Gui.F_Edit_Field.dtpEdit.Checkbox(False)
+Gui.F_Edit_Field.dtpEdit.TabStop(True)
+Gui.F_Edit_Field.dtpEdit.TabIndex(3)
+Gui.F_Edit_Field.dtpEdit.Tooltip("")
+Gui.F_Edit_Field.dtpEdit.ControlGroup(0)
+Gui.F_Edit_Field.dtpEdit.DefaultValue("")
+
+
+Gui.F_Edit_Field.mlttxtEdit.Create(textboxm)
+Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+Gui.F_Edit_Field.mlttxtEdit.Size(4000,600)
+Gui.F_Edit_Field.mlttxtEdit.Zorder(0)
+Gui.F_Edit_Field.mlttxtEdit.Position(100,300)
+Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+Gui.F_Edit_Field.mlttxtEdit.Alignment(0)
+Gui.F_Edit_Field.mlttxtEdit.FontName("Arial")
+Gui.F_Edit_Field.mlttxtEdit.FontSize(8)
+Gui.F_Edit_Field.mlttxtEdit.Backcolor(-2147483643)
+Gui.F_Edit_Field.mlttxtEdit.BorderStyle(1)
+Gui.F_Edit_Field.mlttxtEdit.MaxLength(0)
+Gui.F_Edit_Field.mlttxtEdit.NumericOnly(0)
+Gui.F_Edit_Field.mlttxtEdit.TabStop(True)
+Gui.F_Edit_Field.mlttxtEdit.TabIndex(4)
+Gui.F_Edit_Field.mlttxtEdit.Text("")
+Gui.F_Edit_Field.mlttxtEdit.Tooltip("")
+Gui.F_Edit_Field.mlttxtEdit.ControlGroup(0)
+Gui.F_Edit_Field.mlttxtEdit.DefaultValue("")
+
+
+Gui.F_Edit_Field.lblLabel.Create(label)
+Gui.F_Edit_Field.lblLabel.Caption("Label")
+Gui.F_Edit_Field.lblLabel.Visible(True)
+Gui.F_Edit_Field.lblLabel.Size(1935,255)
+Gui.F_Edit_Field.lblLabel.Zorder(1)
+Gui.F_Edit_Field.lblLabel.Position(100,100)
+Gui.F_Edit_Field.lblLabel.Enabled(True)
+Gui.F_Edit_Field.lblLabel.Alignment(0)
+Gui.F_Edit_Field.lblLabel.FontName("Arial")
+Gui.F_Edit_Field.lblLabel.FontSize(8)
+Gui.F_Edit_Field.lblLabel.Backcolor(-2147483633)
+Gui.F_Edit_Field.lblLabel.BackStyle(0)
+Gui.F_Edit_Field.lblLabel.Tooltip("")
+Gui.F_Edit_Field.lblLabel.ControlGroup(0)
+
+
+Gui.F_Edit_Field.optYes.Create(option)
+Gui.F_Edit_Field.optYes.Caption("Yes")
+Gui.F_Edit_Field.optYes.Visible(True)
+Gui.F_Edit_Field.optYes.Size(700,255)
+Gui.F_Edit_Field.optYes.Zorder(0)
+Gui.F_Edit_Field.optYes.Position(0,50)
+Gui.F_Edit_Field.optYes.Enabled(True)
+Gui.F_Edit_Field.optYes.Alignment(0)
+Gui.F_Edit_Field.optYes.FontName("Arial")
+Gui.F_Edit_Field.optYes.FontSize(8)
+Gui.F_Edit_Field.optYes.Parent("frmalpha")
+Gui.F_Edit_Field.optYes.TabStop(False)
+Gui.F_Edit_Field.optYes.TabIndex(6)
+Gui.F_Edit_Field.optYes.Tooltip("")
+Gui.F_Edit_Field.optYes.ControlGroup(0)
+Gui.F_Edit_Field.optYes.DefaultValue("")
+
+
+Gui.F_Edit_Field.optNo.Create(option)
+Gui.F_Edit_Field.optNo.Caption("No")
+Gui.F_Edit_Field.optNo.Visible(True)
+Gui.F_Edit_Field.optNo.Size(700,255)
+Gui.F_Edit_Field.optNo.Zorder(0)
+Gui.F_Edit_Field.optNo.Position(800,50)
+Gui.F_Edit_Field.optNo.Enabled(True)
+Gui.F_Edit_Field.optNo.Alignment(0)
+Gui.F_Edit_Field.optNo.FontName("Arial")
+Gui.F_Edit_Field.optNo.FontSize(8)
+Gui.F_Edit_Field.optNo.Parent("frmalpha")
+Gui.F_Edit_Field.optNo.TabStop(False)
+Gui.F_Edit_Field.optNo.TabIndex(7)
+Gui.F_Edit_Field.optNo.Tooltip("")
+Gui.F_Edit_Field.optNo.ControlGroup(0)
+Gui.F_Edit_Field.optNo.DefaultValue("")
+
+
+Gui.F_Edit_Field.cmdEntries.Create(button)
+Gui.F_Edit_Field.cmdEntries.Caption("^")
+Gui.F_Edit_Field.cmdEntries.Visible(True)
+Gui.F_Edit_Field.cmdEntries.Size(300,300)
+Gui.F_Edit_Field.cmdEntries.Zorder(0)
+Gui.F_Edit_Field.cmdEntries.Position(4200,300)
+Gui.F_Edit_Field.cmdEntries.Enabled(True)
+Gui.F_Edit_Field.cmdEntries.FontName("Arial")
+Gui.F_Edit_Field.cmdEntries.FontSize(8)
+Gui.F_Edit_Field.cmdEntries.TabStop(True)
+Gui.F_Edit_Field.cmdEntries.TabIndex(8)
+Gui.F_Edit_Field.cmdEntries.Tooltip("")
+Gui.F_Edit_Field.cmdEntries.ControlGroup(0)
+Gui.F_Edit_Field.cmdEntries.DefaultValue("")
+
+Gui.F_Edit_Field.cmdEntries.Event(click,cmdentries_click)
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.UDT.Part.Define("Part",String)
+Variable.UDT.Part.Define("Loc",String)
+Variable.UDT.Part.Define("Tool_Type",String)
+Variable.uGlobal.uPart.Declare("Part")
+Variable.UDT.Exceptions.Define("sTools",String)
+Variable.UDT.Exceptions.Define("sParams",String)
+Variable.UDT.Exceptions.Define("sValues",String)
+Variable.uGlobal.uExceptions.Declare("Exceptions")
+Variable.Global.bEditUser.Declare(Boolean,False)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'TO DO:
+'-Security
+'-field exceptions
+
+V.Local.sQuery.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.bEditUser.Declare(Boolean)
+
+F.Intrinsic.Control.If(V.Caller.Hook,=,14045)
+	V.Passed.000252.Set("Tool Cross Ref")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+'hook 14070
+F.Intrinsic.UI.InvokeWaitDialog("Loading...")
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+V.global.bEditUser.Set(False)
+F.Intrinsic.Control.If(V.Caller.User.ucase,=,"SUPERVSR")
+	V.global.bEditUser.Set(True)
+F.Intrinsic.Control.Elseif(V.Caller.User.ucase,=,"CHRISTY3")
+	V.global.bEditUser.Set(True)
+F.Intrinsic.Control.Elseif(V.Caller.User.ucase,=,"RAY")
+	V.global.bEditUser.Set(True)
+F.Intrinsic.Control.EndIf
+Gui.F_Tool_Type.picSize.visible(false)
+
+Gui.F_Tool_Type.gsfgToolType.Rows(1)
+Gui.F_Tool_Type.gsfgToolType.Cols(3)
+Gui.F_Tool_Type.gsfgToolType.TextMatrix(0,0,"ID")
+Gui.F_Tool_Type.gsfgToolType.ColWidth(0,600)
+Gui.F_Tool_Type.gsfgToolType.TextMatrix(1,0,"Tool Type")
+Gui.F_Tool_Type.gsfgToolType.ColWidth(1,2800)
+Gui.F_Tool_Type.gsfgToolType.TextMatrix(2,0,"")
+Gui.F_Tool_Type.gsfgToolType.ColWidth(2,600)
+
+F.Intrinsic.Control.For(V.Local.iC,0,2,1)
+	Gui.F_Tool_Type.gsfgToolType.BuildStyle(1,V.Local.iC,"Format","alignment","2")
+F.Intrinsic.Control.Next(V.Local.iC)
+Gui.F_Tool_Type.gsfgToolType.BuildStyle(1,0,"type","locked","true")
+Gui.F_Tool_Type.gsfgToolType.BuildStyle(1,1,"type","locked","true")
+Gui.F_Tool_Type.gsfgToolType.BuildStyle(1,2,"type","Command","Select")
+
+Gui.F_Tool.gsfgTool.Rows(1)
+Gui.F_Tool.gsfgTool.Cols(7)
+Gui.F_Tool.gsfgTool.ColWidth(0,600)
+Gui.F_Tool.gsfgTool.ColWidth(1,2000)
+Gui.F_Tool.gsfgTool.ColWidth(2,3450)
+F.Intrinsic.Control.If(V.Global.bEditUser,=,True)
+	Gui.F_Tool.gsfgTool.ColWidth(3,600)
+F.Intrinsic.Control.Else
+	Gui.F_Tool.gsfgTool.ColWidth(3,0)
+F.Intrinsic.Control.EndIf
+Gui.F_Tool.gsfgTool.ColWidth(4,0)
+Gui.F_Tool.gsfgTool.ColWidth(5,0)
+Gui.F_Tool.gsfgTool.ColWidth(6,0)
+
+Gui.F_Tool.gsfgTool.BuildStyle(1,1,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(1,2,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(1,4,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(1,5,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(1,6,"type","locked","true")
+F.Intrinsic.Control.If(V.Global.bEditUser,=,True)
+	Gui.F_Tool.gsfgTool.BuildStyle(1,3,"type","Command","Edit")
+F.Intrinsic.Control.Else
+	Gui.F_Tool.gsfgTool.BuildStyle(1,3,"type","locked","true")
+F.Intrinsic.Control.EndIf
+Gui.F_Tool.gsfgTool.BuildStyle(1,1,"Format","alignment","2")
+Gui.F_Tool.gsfgTool.BuildStyle(1,2,"Format","alignment","2")
+Gui.F_Tool.gsfgTool.BuildStyle(1,3,"Format","alignment","2")
+
+Gui.F_Tool.gsfgTool.BuildStyle(2,1,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(2,2,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(2,4,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(2,5,"type","locked","true")
+Gui.F_Tool.gsfgTool.BuildStyle(2,6,"type","locked","true")
+F.Intrinsic.Control.If(V.Global.bEditUser,=,True)
+	Gui.F_Tool.gsfgTool.BuildStyle(2,3,"type","Command","Edit")
+F.Intrinsic.Control.Else
+	Gui.F_Tool.gsfgTool.BuildStyle(2,3,"type","locked","true")
+F.Intrinsic.Control.EndIf
+Gui.F_Tool.gsfgTool.BuildStyle(2,1,"Format","alignment","2")
+Gui.F_Tool.gsfgTool.BuildStyle(2,2,"Format","alignment","4")
+Gui.F_Tool.gsfgTool.BuildStyle(2,3,"Format","alignment","2")
+
+V.uGlobal.uExceptions.Redim(0,0)
+V.uGlobal.uExceptions(0)!sTools.Set("HOBS - DP*!*DISK SHAPER CUTTERS - DP*!*SHANK TYPE SHAPER CUTTERS - DP*!*THREAD GENERATOR*!*HOBS - MODULE*!*DISK TYPE CUTTERS - MODULE*!*SHANK TYPE SHAPER CUTTERS - MODULE")
+V.uGlobal.uExceptions(0)!sParams.Set("Finish,=,Y")
+V.uGlobal.uExceptions(0)!sValues.Set("Pre-Shave,=,*!*Pre-Grind,=,*!*Thin,=,*!*Prot,=,")
+
+F.Intrinsic.Control.CallSub("Hash")
+F.Intrinsic.Control.CallSub("LoadToolTypes")
+
+
+Program.Sub.Main.End
+
+program.sub.f_tool_type_resize.start
+V.Local.width.Declare(Long)
+V.Local.height.Declare(Long)
+V.Local.gWidth.Declare(Long)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type.Width,<,4800)
+	Gui.F_Tool_Type..Size(4800,V.Screen.F_Tool_Type.Height)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type.Height,<,3000)
+	Gui.F_Tool_Type..Size(V.Screen.F_Tool_Type.Width,3000)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type.Height,-1050,V.Local.height)
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type.Width,-450,V.Local.width)
+Gui.F_Tool_Type.gsfgToolType.Size(V.Local.width,V.Local.height)
+
+F.Intrinsic.Math.Add(V.Local.height,200,V.Local.height)
+Gui.F_Tool_Type.chkShowAll.Position(V.Screen.F_Tool_Type!chkShowAll.Left,V.Local.height)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type!gsfgToolType.Width,>,4350)
+	F.Intrinsic.Math.Add(V.Screen.F_Tool_Type!gsfgToolType.Width,-1550,V.Local.gWidth)
+	Gui.F_Tool_Type.gsfgToolType.ColWidth(1,V.Local.gWidth)
+F.Intrinsic.Control.Else
+	Gui.F_Tool_Type.gsfgToolType.ColWidth(1,2800)
+F.Intrinsic.Control.EndIf
+
+program.sub.f_tool_type_resize.end
+
+program.sub.f_tool_type_unload.start
+F.ODBC.Connection!conx.Close
+f.Intrinsic.Control.End
+
+program.sub.f_tool_type_unload.end
+
+program.sub.gsfgtooltype_commandclick.start
+V.Local.iTool.Declare(Long)
+V.Local.sQuery.Declare(String)
+V.Local.sQuery2.Declare(String)
+V.Local.iC.Declare(Long,1)
+V.Local.sCol.Declare(String)
+V.Local.sColW.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iTemp.Declare(Long)
+V.Local.iTemp2.Declare(Long)
+V.Local.sTool.Declare(String)
+V.Local.sFormat.Declare(String)
+V.Local.sSizes.Declare(String)
+V.Local.sJustified.Declare(String)
+V.Local.iAlign.Declare(String)
+V.Local.sFormats.Declare(String)
+
+V.Local.iUsefulLife.Declare(Long,-1)
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+Gui.F_Tool_Type.gsfgToolType.GetTextMatrix(0,V.Args.key,V.Local.iTool)
+Gui.F_Tool_Type.gsfgToolType.GetTextMatrix(1,V.Args.key,V.Local.sTool)
+Gui.F_Tool_Type..Enabled(False)
+
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Control.If(V.Screen.F_Tool_Type!chkShowAll.Value,=,0)
+	F.Intrinsic.string.Concat("SELECT * FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID='",V.Local.iTool,"' AND LABEL='Useful Life' ORDER BY FIELD_ID ASC",V.Local.sQuery)
+	F.ODBC.Connection!conx.OpenRecordsetRO("rstFields",V.Local.sQuery)
+	F.Intrinsic.Control.If(V.ODBC.conx!rstFields.EOF,<>,True)
+		V.Local.iUsefulLife.Set(V.ODBC.conx!rstFields.FieldValLong!FIELD_ID)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rstFields.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Debug.Stop
+F.Intrinsic.string.Concat("SELECT * FROM ATG_3131_TOOL_TYPE_L WHERE TOOL_ID='",V.Local.iTool,"' ORDER BY FIELD_ID ASC",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstFields",V.Local.sQuery)
+F.Intrinsic.Control.If(V.ODBC.conx!rstFields.EOF,<>,True)
+	V.Local.sQuery.Set("SELECT PART,LOC,FIELD_1")
+	F.Intrinsic.Control.If(V.Local.iUsefulLife,=,-1)
+		F.Intrinsic.String.Concat(" FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID='",V.Local.iTool,"' ORDER BY PART ASC,LOC ASC,FIELD_1 ASC",V.Local.sQuery2)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Concat(" FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID='",V.Local.iTool,"' AND FIELD_",V.Local.iUsefulLife,"<>'0' ORDER BY PART ASC,LOC ASC,FIELD_1 ASC",V.Local.sQuery2)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.String.Concat("Part*!*Loc*!*",V.ODBC.conx!rstFields.FieldValTrim!LABEL,V.Local.sCol)
+	F.Intrinsic.String.Concat("*!**!*",V.ODBC.conx!rstFields.FieldValTrim!FORMAT,V.Local.sFormat)
+	F.Intrinsic.String.Concat("*!**!*",V.ODBC.conx!rstFields.FieldValTrim!FIELD_SIZE,V.Local.sSizes)
+	F.Intrinsic.String.Concat("*!**!*",V.ODBC.conx!rstFields.FieldValTrim!JUSTIFIED,V.Local.sJustified)
+	V.Local.sFormats.Set("*!**!*")
+	V.Local.iAlign.Set("0*!*0*!*0")
+	F.Intrinsic.Math.Mult(V.ODBC.conx!rstFields.FieldValLong!FIELD_SIZE,150,V.Local.iTemp)
+	Gui.F_Tool_Type.picSize.TextWidth(V.ODBC.conx!rstFields.FieldValTrim!LABEL,V.Local.iTemp2)
+	F.Intrinsic.Math.Mult(V.Local.iTemp2,20,V.Local.iTemp2)
+	F.Intrinsic.Control.If(V.Local.iTemp2,>,V.Local.iTemp)
+		V.Local.iTemp.Set(V.Local.iTemp2)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.String.Concat("3000*!*800*!*",V.Local.iTemp,V.Local.sColW)
+	F.ODBC.conx!rstFields.MoveNext
+
+	F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstFields.EOF,=,True)
+		F.Intrinsic.Math.Add(V.Local.iC,1,V.Local.iC)
+		F.Intrinsic.String.Concat(V.Local.sCol,"*!*",V.ODBC.conx!rstFields.FieldValTrim!LABEL,V.Local.sCol)
+		F.Intrinsic.String.Concat(V.Local.sFormat,"*!*",V.ODBC.conx!rstFields.FieldValTrim!FORMAT,V.Local.sFormat)
+		F.Intrinsic.String.Concat(V.Local.sSizes,"*!*",V.ODBC.conx!rstFields.FieldValTrim!FIELD_SIZE,V.Local.sSizes)
+		F.Intrinsic.String.Concat(V.Local.sJustified,"*!*",V.ODBC.conx!rstFields.FieldValTrim!JUSTIFIED,V.Local.sJustified)
+		F.Intrinsic.String.Concat(V.Local.sFormats,"*!*",V.Local.sFormats)
+		F.Intrinsic.String.Concat(V.Local.iAlign,"*!*0",V.Local.iAlign)
+		F.Intrinsic.Math.Mult(V.ODBC.conx!rstFields.FieldValLong!FIELD_SIZE,150,V.Local.iTemp)
+		Gui.F_Tool_Type.picSize.TextWidth(V.ODBC.conx!rstFields.FieldValTrim!LABEL,V.Local.iTemp2)
+		F.Intrinsic.Math.Mult(V.Local.iTemp2,20,V.Local.iTemp2)
+		F.Intrinsic.Control.If(V.Local.iTemp2,>,V.Local.iTemp)
+			V.Local.iTemp.Set(V.Local.iTemp2)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Concat(V.Local.sColW,"*!*",V.Local.iTemp,V.Local.sColW)
+		F.Intrinsic.String.Concat(V.Local.sQuery,",FIELD_",V.Local.iC,V.Local.sQuery)
+		F.Intrinsic.Control.If(V.Local.iC,<,7)
+			F.Intrinsic.String.Concat(V.Local.sQuery2,",FIELD_",V.Local.iC," ASC",V.Local.sQuery2)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rstFields.MoveNext
+	F.Intrinsic.Control.Loop
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rstFields.Close
+
+F.Intrinsic.Control.If(V.Local.sCol,<>,"")
+'	F.Intrinsic.Debug.InvokeDebugger
+	F.Intrinsic.Debug.Stop
+	F.Intrinsic.String.Split(V.Local.sCol,"*!*",V.Local.sCol)
+	F.Intrinsic.String.Split(V.Local.sColW,"*!*",V.Local.sColW)
+	F.Intrinsic.String.Split(V.Local.iAlign,"*!*",V.Local.iAlign)
+	f.Intrinsic.String.Split(V.Local.sFormats,"*!*",V.Local.sFormats)
+	F.Intrinsic.String.Concat(V.Local.sQuery,V.Local.sQuery2,V.Local.sQuery)
+	Gui.F_Tool_Type..Visible(False)
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+	
+	F.Intrinsic.Debug.Stop
+	F.Intrinsic.UI.Browser("Select a tool","conx",V.Local.sQuery,V.Local.sCol,V.Local.sColW,10000,5000,V.Local.sFormats,V.local.iAlign,V.Local.sRet)
+
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Join(V.Local.sCol,"*!*",V.Local.sCol)
+		Gui.F_Tool.gsfgTool.ClearMetadata
+		F.Intrinsic.Control.CallSub("LoadTool","iTool",V.local.iTool,"sTool",V.Local.sTool,"sCol",V.Local.sCol,"sRet",V.Local.sRet,"sFormat",V.Local.sFormat,"sSize",V.Local.sSizes,"sJustified",V.Local.sJustified)
+	F.Intrinsic.Control.Else
+		Gui.F_Tool_Type..Visible(True)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	Gui.F_Tool_Type..Visible(True)
+F.Intrinsic.Control.EndIf
+Gui.F_Tool_Type..Enabled(True)
+
+program.sub.gsfgtooltype_commandclick.end
+
+Program.Sub.LoadToolTypes.Start
+V.Local.sQuery.Declare(String)
+V.Local.iRows.Declare(Long)
+
+Gui.F_Tool_Type.gsfgToolType.Rows(1)
+Gui.F_Tool_Type.gsfgToolType.Rows(2)
+Gui.F_Tool_Type.gsfgToolType.FixedRows(1)
+
+V.Local.sQuery.Set("SELECT TOOL_ID, TOOL_TYPE FROM ATG_3131_TOOL_TYPE_H ORDER BY TOOL_ID ASC")
+F.ODBC.Connection!conx.OpenRecordsetRO("rstToolType",V.Local.sQuery)
+Gui.F_Tool_Type.gsfgToolType.LoadRecordset("conx!rstToolType",1)
+F.ODBC.conx!rstToolType.Close
+
+F.Intrinsic.Math.Add(V.Screen.F_Tool_Type!gsfgToolType.Rows,-1,V.Local.iRows)
+F.Intrinsic.Control.If(V.Local.iRows,>,1)
+	Gui.F_Tool_Type.gsfgToolType.Rows(V.Local.iRows)
+F.Intrinsic.Control.EndIf
+
+f.Intrinsic.UI.CloseWaitDialog
+Gui.F_Tool_Type..Show
+
+Program.Sub.LoadToolTypes.End
+
+program.sub.f_tool_unload.start
+F.ODBC.Connection!conx.Close
+F.Intrinsic.Control.End
+
+
+program.sub.f_tool_unload.end
+
+Program.Sub.LoadTool.Start
+V.Local.sCol.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iR.Declare(Long,0)
+V.Local.iRows.Declare(Long,0)
+V.Local.sFormats.Declare(String)
+V.Local.sSizes.Declare(String)
+V.Local.sJustified.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.sString.Declare(String)
+V.Local.iField.Declare(Long)
+V.Local.sColumns.Declare(String)
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading tool ...","Loading Tool")
+
+F.Intrinsic.String.Split(V.Args.sCol,"*!*",V.Local.sCol)
+F.Intrinsic.String.Split(V.Args.sRet,"*!*",V.Local.sRet)
+F.Intrinsic.String.Split(V.Args.sFormat,"*!*",V.Local.sFormats)
+F.Intrinsic.String.Split(V.Args.sSize,"*!*",V.Local.sSizes)
+F.Intrinsic.String.Split(V.Args.sJustified,"*!*",V.Local.sJustified)
+
+
+F.Intrinsic.String.Concat("PART: ",V.Local.sRet(0),"  LOC: ",V.Local.sRet(1),V.Local.sString)
+Gui.F_Tool..Caption(V.Local.sString)
+
+F.Intrinsic.Control.For(V.Local.iC,2,V.Local.sCol.UBound,1)
+	V.Local.iR.Set(V.Local.iRows)
+	F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+	Gui.F_Tool.gsfgTool.Rows(V.Local.iRows)
+
+	F.Intrinsic.Math.Add(V.Local.iR,1,V.Local.iField)
+	Gui.F_Tool.gsfgTool.TextMatrix(0,V.Local.iR,V.Local.iField)
+	Gui.F_Tool.gsfgTool.TextMatrix(1,V.Local.iR,V.Local.sCol(v.Local.iC))
+	Gui.F_Tool.gsfgTool.TextMatrix(2,V.Local.iR,V.Local.sRet(v.Local.iC).Trim)
+	Gui.F_Tool.gsfgTool.TextMatrix(4,V.Local.iR,V.Local.sFormats(v.Local.iC))
+	Gui.F_Tool.gsfgTool.TextMatrix(5,V.Local.iR,V.Local.sSizes(v.Local.iC))
+	Gui.F_Tool.gsfgTool.TextMatrix(6,V.Local.iR,V.Local.sJustified(v.Local.iC))
+	F.Intrinsic.Control.If(V.Local.iC,<>,V.Local.sCol.UBound)
+		F.Intrinsic.String.Concat(V.local.sColumns,V.Local.iR,"*!*",V.Local.sCol(v.Local.iC),"!*!",V.Local.sColumns)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Concat(V.local.sColumns,V.Local.iR,"*!*",V.Local.sCol(v.Local.iC),V.Local.sColumns)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.If(V.Local.sJustified(v.Local.iC),=,1)
+		Gui.F_Tool.gsfgTool.ApplyStyle(V.Local.iR,2)
+	F.Intrinsic.Control.Else
+		Gui.F_Tool.gsfgTool.ApplyStyle(V.Local.iR,1)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.UI.ChangeWaitStatus("Loading tool ...",V.Local.iC,2,V.Local.sCol.UBound)
+F.Intrinsic.Control.Next(V.Local.iC)
+
+Gui.F_Tool.gsfgTool.SetMetaData(V.Args.iTool,V.Local.sRet(0),V.Local.sRet(1),V.args.sTool,V.Local.sColumns)
+
+Gui.F_Tool.gsfgTool.FixedCols(1)
+F.Intrinsic.UI.CloseWaitDialog
+Gui.F_Tool..Show
+
+Program.Sub.LoadTool.End
+
+program.sub.f_edit_field_unload.start
+Gui.F_Edit_Field..Visible(False)
+gui.F_Tool..Enabled(True)
+
+program.sub.f_edit_field_unload.end
+
+program.sub.cmdsave_click.start
+V.Local.sFormat.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.sValue.Declare(String)
+V.Local.iField.Declare(Long)
+V.Local.sQuery.Declare(String)
+V.Local.bNumeric.Declare(Boolean)
+V.Local.sPart.Declare(String)
+
+Gui.F_Edit_Field.cmdSave.Enabled(False)
+
+'Gui.F_Edit_Field.txtEdit.SetMetaData(V.Args.key,V.Local.sRow(2),V.Local.sRow(4),V.Local.sRow(5),V.Local.sRow(6))
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Math.Add(V.Screen.F_Edit_Field!txtEdit.MetaData0,1,V.Local.iField)
+V.Local.sFormat.Set(V.Screen.F_Edit_Field!txtEdit.MetaData2)
+
+F.Intrinsic.Control.If(V.Screen.F_Edit_Field!txtEdit.Visible,=,True)
+	F.Intrinsic.Math.IsNumeric(V.Local.sFormat,V.Local.bNumeric)
+	F.Intrinsic.Control.If(V.Local.bNumeric,=,True)
+'		F.Intrinsic.Control.CallSub("Gen_Numeric_Format","iPlaces",V.Local.sFormat)
+		F.Intrinsic.String.RPad("","0",V.Local.sFormat,V.Local.sFormat)
+		F.Intrinsic.String.Concat("##########0.",V.Local.sFormat,V.Local.sFormat)
+		F.Intrinsic.String.Format(V.Screen.F_Edit_Field!txtEdit.Text,V.local.sFormat,V.Local.sValue)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Left(V.Screen.F_Edit_Field!txtEdit.Text,V.Screen.F_Edit_Field!txtEdit.MetaData3,V.Local.sValue)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.ElseIf(V.Screen.F_Edit_Field!mlttxtEdit.Visible,=,True)
+	F.Intrinsic.String.Left(V.Screen.F_Edit_Field!mlttxtEdit.Text,V.Screen.F_Edit_Field!txtEdit.MetaData3,V.Local.sValue)
+F.Intrinsic.Control.ElseIf(V.Screen.F_Edit_Field!frmAlpha.Visible,=,True)
+	F.Intrinsic.Control.If(V.Screen.F_Edit_Field!optYes.Value,=,True)
+		V.Local.sValue.Set("Y")
+	F.Intrinsic.Control.Else
+		V.Local.sValue.Set("N")
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.ElseIf(V.Screen.F_Edit_Field!dtpEdit.Visible,=,True)
+	F.Intrinsic.String.Format(V.Screen.F_Edit_Field!dtpEdit.Value,"MM/DD/YY",V.Local.sValue)
+'	V.Local.sValue.Set(V.Screen.F_Edit_Field!dtpEdit.value)
+F.Intrinsic.Control.EndIf
+
+Gui.F_Tool.gsfgTool.TextMatrix(2,V.Screen.F_Edit_Field!txtEdit.MetaData0,V.Local.sValue)
+F.Intrinsic.Control.If(V.Screen.F_Edit_Field!txtEdit.MetaData4,=,1)
+	Gui.F_Tool.gsfgTool.ApplyStyle(V.Screen.F_Edit_Field!txtEdit.MetaData0,2)
+F.Intrinsic.Control.Else
+	Gui.F_Tool.gsfgTool.ApplyStyle(V.Screen.F_Edit_Field!txtEdit.MetaData0,1)
+F.Intrinsic.Control.EndIf
+
+'F.Intrinsic.String.Concat("PART: ",V.Local.sRet(0),"  LOC: ",V.Local.sRet(1),V.Local.sString)
+F.Intrinsic.string.Concat("SELECT * FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID='",V.Screen.F_Tool!gsfgTool.MetaData0,"' AND PART='",V.Screen.F_Tool!gsfgTool.MetaData1,"' AND LOC='",V.Screen.F_Tool!gsfgTool.MetaData2,"'",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRW("rstTool",V.Local.sQuery)
+F.Intrinsic.Control.If(V.ODBC.conx!rstTool.EOF,<>,True)
+	F.ODBC.conx!rstTool.Set!FIELD_[v.local.iField](V.Local.sValue.RTrim)
+	F.ODBC.conx!rstTool.Update
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rstTool.Close
+
+F.Intrinsic.Control.CallSub("CheckExceptions","sValue",V.Local.sValue)
+
+Gui.F_Edit_Field.cmdSave.Enabled(True)
+F.Intrinsic.Control.CallSub("f_edit_field_unload")
+
+
+program.sub.cmdsave_click.end
+
+program.sub.gsfgtool_commandclick.start
+V.Local.sRow.Declare(String)
+V.Local.sWidth.Declare(Long)
+V.Local.sFormat.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.iHeight.Declare(Long)
+V.Local.iTemp.Declare(Long)
+V.Local.sDate.Declare(String)
+V.Local.bIsDate.Declare(Boolean)
+
+Gui.F_Tool..Enabled(False)
+Gui.F_Tool.gsfgTool.ReadRow(V.Args.Key,V.Local.sRow)
+F.Intrinsic.String.Split(V.Local.sRow,"*!*",V.Local.sRow)
+
+Gui.F_Edit_Field.lblLabel.caption(V.Local.sRow(1))
+Gui.F_Edit_Field.txtEdit.Text(V.Local.sRow(2))
+Gui.F_Edit_Field.txtEdit.ClearMetadata
+Gui.F_Edit_Field.txtEdit.SetMetaData(V.Args.key,V.Local.sRow(2),V.Local.sRow(4),V.Local.sRow(5),V.Local.sRow(6))
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+V.Local.sFormat.Set(V.Local.sRow(4).Trim)
+
+F.Intrinsic.Control.If(V.Local.sRow(2).IsDate,=,True)
+	V.Local.bIsDate.Set(True)
+F.Intrinsic.Control.ElseIf(V.Local.sRow(2).Trim,=,"")
+	V.Local.bIsDate.Set(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub("ClearEditScreen")
+F.Intrinsic.Control.SelectCase(V.Local.sFormat.UCase)
+F.Intrinsic.Control.Case("DATE")
+	F.Intrinsic.Control.If(V.Local.bIsDate,=,True)
+'	F.Intrinsic.Control.If(V.Local.sDate,<>,"")
+		Gui.F_Edit_Field.dtpEdit.Enabled(True)
+		Gui.F_Edit_Field.dtpEdit.Visible(True)
+		Gui.F_Edit_Field.txtEdit.Enabled(False)
+		Gui.F_Edit_Field.txtEdit.Visible(False)
+		Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+		Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+		Gui.F_Edit_Field.frmAlpha.Visible(False)
+
+		Gui.F_Edit_Field.cmdSave.Position(100,700)
+		
+		Gui.F_Tool_Type.picSize.TextWidth(V.Local.sRow(1),V.Local.iWidth)
+		F.Intrinsic.Math.Mult(V.Local.iWidth,20,V.Local.iWidth)
+		F.Intrinsic.Math.Add(V.Local.iWidth,275,V.Local.iWidth)
+		F.Intrinsic.Control.If(V.Local.iWidth,<,2275)
+			V.Local.iWidth.Set(2275)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Math.Add(V.Screen.F_Edit_Field!dtpEdit.Width,200,V.Local.iTemp)
+		Gui.F_Edit_Field.cmdEntries.Position(V.Local.iTemp,300)
+		F.Intrinsic.Math.Add(V.Local.iWidth,400,V.Local.iWidth)
+		Gui.F_Edit_Field..Size(V.Local.iWidth,1575)
+		F.Intrinsic.Control.If(V.Local.sRow(2).Trim,=,"")
+			Gui.F_Edit_Field.dtpEdit.value(V.Ambient.Now)
+		F.Intrinsic.Control.Else
+			Gui.F_Edit_Field.dtpEdit.Value(V.Local.sRow(2))
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		Gui.F_Edit_Field.txtEdit.Enabled(True)
+		Gui.F_Edit_Field.txtEdit.Visible(True)
+		Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+		Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+
+		Gui.F_Edit_Field.cmdSave.Position(100,700)
+		F.Intrinsic.Control.If(V.Local.iWidth,<,2000)
+			V.Local.iWidth.Set(2000)
+		F.Intrinsic.Control.EndIf
+		Gui.F_Edit_Field.txtEdit.Size(V.Local.iWidth,300)
+		Gui.F_Edit_Field.txtEdit.MaxLength(V.Local.sRow(5))
+		Gui.F_Tool_Type.picSize.TextWidth(V.Local.sRow(1),V.Local.iTemp)
+		F.Intrinsic.Math.Add(V.Local.iWidth,275,V.Local.iWidth)
+		F.Intrinsic.Math.Mult(V.Local.iTemp,20,V.Local.iTemp)
+		F.Intrinsic.Math.Add(V.Local.iTemp,275,V.Local.iTemp)
+		F.Intrinsic.Control.If(V.Local.iTemp,>,V.Local.iWidth)
+			V.Local.iWidth.Set(V.Local.iTemp)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Math.Add(V.Screen.F_Edit_Field!txtEdit.Width,200,V.Local.iTemp)
+		Gui.F_Edit_Field.cmdEntries.Position(V.Local.iTemp,300)
+
+		F.Intrinsic.Math.Add(V.Local.iWidth,400,V.Local.iWidth)
+		Gui.F_Edit_Field..Size(V.Local.iWidth,1575)
+		Gui.F_Edit_Field.txtEdit.Text(V.Local.sRow(2))
+		Gui.F_Edit_Field.txtEdit.NumericOnly(0)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Case("ALPHA-NUMERIC")
+	Gui.F_Edit_Field.dtpEdit.Enabled(False)
+	Gui.F_Edit_Field.dtpEdit.Visible(False)
+	Gui.F_Edit_Field.frmAlpha.Visible(False)
+
+	F.Intrinsic.Math.Mult(V.Local.sRow(5),100,V.Local.iWidth)
+	F.Intrinsic.Control.If(V.Local.iWidth,<,4000)
+		Gui.F_Edit_Field.txtEdit.Enabled(True)
+		Gui.F_Edit_Field.txtEdit.Visible(True)
+		Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+		Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+
+		Gui.F_Edit_Field.cmdSave.Position(100,700)
+		F.Intrinsic.Control.If(V.Local.iWidth,<,2000)
+			V.Local.iWidth.Set(2000)
+		F.Intrinsic.Control.EndIf
+		Gui.F_Edit_Field.txtEdit.Size(V.Local.iWidth,300)
+		Gui.F_Edit_Field.txtEdit.MaxLength(V.Local.sRow(5))
+		Gui.F_Tool_Type.picSize.TextWidth(V.Local.sRow(1),V.Local.iTemp)
+		F.Intrinsic.Math.Add(V.Local.iWidth,275,V.Local.iWidth)
+		F.Intrinsic.Math.Mult(V.Local.iTemp,20,V.Local.iTemp)
+		F.Intrinsic.Math.Add(V.Local.iTemp,275,V.Local.iTemp)
+		F.Intrinsic.Control.If(V.Local.iTemp,>,V.Local.iWidth)
+			V.Local.iWidth.Set(V.Local.iTemp)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Math.Add(V.Screen.F_Edit_Field!txtEdit.Width,200,V.Local.iTemp)
+		Gui.F_Edit_Field.cmdEntries.Position(V.Local.iTemp,300)
+
+		F.Intrinsic.Math.Add(V.Local.iWidth,400,V.Local.iWidth)
+		Gui.F_Edit_Field..Size(V.Local.iWidth,1575)
+		Gui.F_Edit_Field.txtEdit.Text(V.Local.sRow(2))
+		Gui.F_Edit_Field.txtEdit.NumericOnly(0)
+	F.Intrinsic.Control.Else
+		Gui.F_Edit_Field.txtEdit.Enabled(False)
+		Gui.F_Edit_Field.txtEdit.Visible(False)
+		Gui.F_Edit_Field.mlttxtEdit.Enabled(True)
+		Gui.F_Edit_Field.mlttxtEdit.Visible(True)
+
+		Gui.F_Edit_Field.cmdSave.Position(100,1000)
+		Gui.F_Edit_Field.mlttxtEdit.MaxLength(V.Local.sRow(5))
+
+		Gui.F_Edit_Field.cmdEntries.Position(4200,300)
+		Gui.F_Edit_Field..Size(4700,1875)
+		Gui.F_Edit_Field.mlttxtEdit.Text(V.Local.sRow(2))
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Case("ALPHA (Y OR N)")
+	Gui.F_Edit_Field.dtpEdit.Enabled(False)
+	Gui.F_Edit_Field.dtpEdit.Visible(False)
+	Gui.F_Edit_Field.txtEdit.Enabled(False)
+	Gui.F_Edit_Field.txtEdit.Visible(False)
+	Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+	Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+	Gui.F_Edit_Field.frmAlpha.Visible(True)
+
+	Gui.F_Edit_Field.cmdSave.Position(100,700)
+	Gui.F_Edit_Field.cmdEntries.Position(1500,300)
+	Gui.F_Edit_Field..Size(2275,1575)
+	F.Intrinsic.Control.If(V.Local.sRow(2),=,"Y")
+		Gui.F_Edit_Field.optYes.Value(1)
+	F.Intrinsic.Control.Else
+		Gui.F_Edit_Field.optNo.Value(1)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Case("ALPHA")
+	Gui.F_Edit_Field.dtpEdit.Enabled(False)
+	Gui.F_Edit_Field.dtpEdit.Visible(False)
+	Gui.F_Edit_Field.txtEdit.Enabled(False)
+	Gui.F_Edit_Field.txtEdit.Visible(False)
+	Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+	Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+	Gui.F_Edit_Field.frmAlpha.Visible(True)
+
+	Gui.F_Edit_Field.cmdSave.Position(100,700)
+	Gui.F_Edit_Field.cmdEntries.Position(1500,300)
+	Gui.F_Edit_Field..Size(2275,1575)
+	F.Intrinsic.Control.If(V.Local.sRow(2),=,"Y")
+		Gui.F_Edit_Field.optYes.Value(1)
+	F.Intrinsic.Control.Else
+		Gui.F_Edit_Field.optNo.Value(1)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.CaseElse
+	Gui.F_Edit_Field.dtpEdit.Enabled(False)
+	Gui.F_Edit_Field.dtpEdit.Visible(False)
+	Gui.F_Edit_Field.txtEdit.Enabled(True)
+	Gui.F_Edit_Field.txtEdit.Visible(True)
+	Gui.F_Edit_Field.mlttxtEdit.Enabled(False)
+	Gui.F_Edit_Field.mlttxtEdit.Visible(False)
+	Gui.F_Edit_Field.frmAlpha.Visible(False)
+
+	Gui.F_Edit_Field.cmdSave.Position(100,700)
+	Gui.F_Edit_Field.cmdEntries.Position(2200,300)
+	Gui.F_Edit_Field.txtEdit.Size(2000,300)
+	Gui.F_Edit_Field.txtEdit.MaxLength(V.Local.sRow(5))
+	Gui.F_Edit_Field..Size(2675,1575)
+	Gui.F_Edit_Field.txtEdit.Text(V.Local.sRow(2))
+
+	F.Intrinsic.String.Split(V.Local.sFormat.UCase,"(",V.Local.sFormat)
+	Gui.F_Edit_Field.txtEdit.NumericOnly(0)
+	F.Intrinsic.Control.If(V.Local.sFormat.UBound,>,0)
+		F.Intrinsic.Control.If(V.Local.sFormat(0).Trim,=,"NUMERIC")
+			F.Intrinsic.String.Replace(V.Local.sFormat(1),")","",V.Local.sFormat(1))
+			F.Intrinsic.Control.If(V.Local.sFormat(1).IsNumeric,=,True)
+				F.Intrinsic.Control.If(V.Local.sFormat(1),=,0)
+					Gui.F_Edit_Field.txtEdit.NumericOnly(2)
+				F.Intrinsic.Control.Else
+					Gui.F_Edit_Field.txtEdit.NumericOnly(1)
+					Gui.F_Edit_Field.txtEdit.SetMetaData(V.Args.key,V.Local.sRow(2),V.Local.sFormat(1),V.Local.sRow(5),V.Local.sRow(6))
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Endif
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndSelect
+
+
+'Gui.F_Edit_Field..AlwaysOnTop(True)
+Gui.F_Edit_Field..Show
+
+program.sub.gsfgtool_commandclick.end
+
+program.sub.f_tool_resize.start
+V.Local.width.Declare(Long)
+V.Local.height.Declare(Long)
+V.Local.gWidth.Declare(Long)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool.Width,<,7450)
+	Gui.F_Tool..Size(7450,V.Screen.F_Tool.Height)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_Tool.Height,<,3000)
+	Gui.F_Tool..Size(V.Screen.F_Tool.Width,3000)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Math.Add(V.Screen.F_Tool.Height,-775,V.Local.height)
+F.Intrinsic.Math.Add(V.Screen.F_Tool.Width,-450,V.Local.width)
+Gui.F_Tool.gsfgTool.Size(V.Local.width,V.Local.height)
+
+F.Intrinsic.Control.If(V.Screen.F_Tool!gsfgTool.Width,>,7000)
+	F.Intrinsic.Control.If(V.Global.bEditUser,=,True)
+		F.Intrinsic.Math.Add(V.Screen.F_Tool!gsfgTool.Width,-1550,V.Local.gWidth)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Add(V.Screen.F_Tool!gsfgTool.Width,-950,V.Local.gWidth)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.3669725,V.Local.width)
+	Gui.F_Tool.gsfgTool.ColWidth(1,V.Local.Width)
+	F.Intrinsic.Math.Mult(V.Local.gWidth,0.6330275,V.Local.width)
+	Gui.F_Tool.gsfgTool.ColWidth(2,V.Local.Width)
+F.Intrinsic.Control.Else
+	Gui.F_Tool.gsfgTool.ColWidth(1,2000)
+	Gui.F_Tool.gsfgTool.ColWidth(2,3450)
+F.Intrinsic.Control.EndIf
+
+
+program.sub.f_tool_resize.end
+
+Program.Sub.Gen_Numeric_Format.Start
+V.Local.sFormat.Declare(String)
+V.Local.iC.Declare(Long)
+
+V.Local.sFormat.Set("##########0.")
+
+F.Intrinsic.Control.For(V.Local.iC,1,V.Args.iPlaces,1)
+	f.Intrinsic.String.Concat(V.Local.sFormat,"0",V.Local.sFormat)
+F.Intrinsic.Control.Next(V.Local.iC)
+
+Program.Sub.Gen_Numeric_Format.End
+
+Program.Sub.CheckExceptions.Start
+V.Local.iC.Declare(Long)
+V.Local.iT.Declare(Long)
+V.Local.iP.Declare(Long)
+V.Local.iR.Declare(Long)
+V.Local.sTools.Declare(String)
+V.Local.sParams.Declare(String)
+V.Local.sValues.Declare(String)
+V.Local.bToolSel.Declare(Boolean)
+V.Local.iParams.Declare(Long,0)
+V.Local.sTool.Declare(String)
+V.Local.bParamSel.Declare(Boolean)
+V.Local.sParam.Declare(String)
+V.Local.sCols.Declare(String)
+V.Local.sCol.Declare(String)
+V.Local.iField.Declare(Long)
+V.Local.sTemp.Declare(String)
+V.Local.iTemp.Declare(Long)
+V.Local.sQuery.Declare(String)
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+'F.Intrinsic.UI.Msgbox(V.Screen.F_Tool!gsfgTool.MetaData4)
+V.Local.sTool.Set(V.Screen.F_Tool!gsfgTool.MetaData3)
+F.Intrinsic.String.Split(V.Screen.F_Tool!gsfgTool.MetaData4,"!*!",V.Local.sCols)
+'Search through exceptions
+F.Intrinsic.Control.For(V.Local.iC,0,V.uGlobal.uExceptions.UBound,1)
+	F.Intrinsic.Control.If(V.uGlobal.uExceptions(v.Local.iC)!sTools,<>,"")
+		'Split tools, values, and params
+		F.Intrinsic.String.Split(V.uGlobal.uExceptions(v.Local.iC)!sTools,"*!*",V.Local.sTools)
+		F.Intrinsic.String.Split(V.uGlobal.uExceptions(v.Local.iC)!sParams,"*!*",V.Local.sParams)
+		F.Intrinsic.String.Split(V.uGlobal.uExceptions(v.Local.iC)!sValues,"*!*",V.Local.sValues)
+
+		'loop through to see if tool is selected
+		V.Local.bToolSel.Set(False)
+		V.Local.bParamSel.Set(False)
+		V.Local.iParams.Set(0)
+		F.Intrinsic.Control.For(V.Local.iT,0,V.Local.sTools.ubound,1)
+			F.Intrinsic.Control.If(V.Local.sTool.UCase,=,V.Local.sTools(v.Local.iT))
+				V.Local.bToolSel.Set(True)
+				F.Intrinsic.Control.ExitFor(V.Local.iT)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iT)
+
+		F.Intrinsic.Control.If(V.Local.bToolSel,=,True)
+			'Loop through to see if field selected is in params
+			F.Intrinsic.Control.For(V.Local.iP,0,V.Local.sParams.ubound,1)
+				F.Intrinsic.String.Split(V.Local.sParams(v.Local.iP),",",V.Local.sParam)
+				F.Intrinsic.Control.If(V.Local.sParam(0),=,V.Screen.F_Edit_Field!lblLabel.Caption)
+					V.Local.bParamSel.Set(True)
+					F.Intrinsic.Control.ExitFor(V.Local.iP)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Next(V.Local.iP)
+
+			F.Intrinsic.Control.If(V.Local.bParamSel,=,True)
+				'Loop through columns to get field ids and see if parameters apply, as well as replacing column titles with column ids in the values
+				F.Intrinsic.Control.For(V.Local.iR,0,V.Local.sCols.UBound,1)
+					V.Local.bParamSel.Set(False)
+					F.Intrinsic.String.Split(V.Local.sCols(v.Local.iR),"*!*",V.Local.sCol)
+					
+					F.Intrinsic.Control.For(V.Local.iP,0,V.Local.sParams.UBound,1)
+						F.Intrinsic.String.Split(V.Local.sParams(v.Local.iP),",",V.Local.sParam)
+						F.Intrinsic.Control.if(V.Local.sParam(0).UCase,=,V.Local.sCol(1).UCase)
+							Gui.F_Tool.gsfgTool.GetTextMatrix(2,V.Local.sCol(0),V.Local.sTemp)
+							F.Intrinsic.Control.If(V.Local.sTemp.UCase,V.Local.sParam(1),V.Local.sParam(2).UCase)
+								F.Intrinsic.Math.Add(V.Local.iParams,1,V.Local.iParams)
+							F.Intrinsic.Control.EndIf
+							V.Local.bParamSel.Set(True)
+							F.Intrinsic.Control.ExitFor(V.Local.iP)
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.Next(V.Local.iP)
+
+					F.Intrinsic.Control.If(V.Local.bParamSel,=,False)
+						F.Intrinsic.Control.For(V.Local.iP,0,V.Local.sValues.UBound,1)
+							F.Intrinsic.String.Split(V.Local.sValues(v.Local.iP),",",V.Local.sParam)
+							F.Intrinsic.Control.if(V.Local.sParam(0).UCase,=,V.Local.sCol(1).UCase)
+								F.Intrinsic.String.Concat(V.Local.sCol(0),",",V.Local.sParam(1),",",V.Local.sParam(2),V.Local.sValues(v.Local.iP))
+								F.Intrinsic.Control.ExitFor(V.Local.iP)
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.Next(V.Local.iP)
+					F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.Next(V.Local.iR)
+
+				F.Intrinsic.Math.Add(V.Local.sParams.UBound,1,V.Local.iTemp)
+				'If all parameters apply, update flexgrid and rst
+'				F.Intrinsic.Debug.InvokeDebugger
+					F.Intrinsic.Debug.Stop
+				F.Intrinsic.Control.If(V.Local.iParams,=,V.Local.iTemp)
+					F.Intrinsic.Control.For(V.Local.iP,0,V.Local.sValues.UBound,1)
+						F.Intrinsic.String.Split(V.Local.sValues(v.Local.iP),",",V.Local.sParam)
+						Gui.F_Tool.gsfgTool.TextMatrix(2,V.Local.sParam(0),V.Local.sParam(2))
+
+						F.Intrinsic.Math.Add(V.Local.sParam(0),1,V.Local.sParam(0))
+						F.Intrinsic.String.Concat("UPDATE ATG_3131_TOOL_FIELDS SET FIELD_",V.Local.sParam(0),"='",V.Local.sParam(2),"' WHERE PART='",V.Screen.F_Tool!gsfgTool.MetaData1,"' AND LOC='",V.Screen.F_Tool!gsfgTool.MetaData2,"'",V.Local.sQuery)
+						F.ODBC.Connection!conx.Execute(V.Local.sQuery)
+					F.Intrinsic.Control.Next(V.Local.iP)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		'To be added
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iC)
+
+Program.Sub.CheckExceptions.End
+
+Program.Sub.ClearEditScreen.Start
+Gui.F_Edit_Field.dtpEdit.Value(V.Ambient.Now)
+Gui.F_Edit_Field.mlttxtEdit.Text("")
+Gui.F_Edit_Field.optNo.Value(0)
+Gui.F_Edit_Field.optYes.Value(0)
+gui.F_Edit_Field.txtEdit.Text("")
+
+Program.Sub.ClearEditScreen.End
+
+program.sub.cmdentries_click.start
+V.Local.sCol.Declare(String)
+V.Local.sColW.Declare(String)
+V.Local.sAlign.Declare(String)
+V.Local.sFormat.Declare(String)
+V.Local.sRet.Declare(String)
+
+Gui.F_Edit_Field..Enabled(False)
+F.Intrinsic.String.Concat("Part*!*Loc*!*Tool Type*!*",V.Screen.F_Edit_Field!lblLabel.Caption,V.Local.sCol)
+F.Intrinsic.String.Split(V.Local.sCol,"*!*",V.Local.sCol)
+F.Intrinsic.String.Split("2500*!*1000*!*2000*!*3000","*!*",V.Local.sColW)
+F.Intrinsic.String.Split("0*!*0*!*0*!*0","*!*",V.Local.sAlign)
+F.Intrinsic.String.Split("*!**!**!*","*!*",V.Local.sFormat)
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...")
+F.Intrinsic.Control.CallSub("GetEntriesForField","sLabel",V.Screen.F_Edit_Field!lblLabel.Caption)
+F.Intrinsic.UI.CloseWaitDialog
+
+F.Intrinsic.UI.BrowserFromString("Select a part",V.Args.sPartString,"*!*","!*!",V.Local.sCol,V.Local.sColW,10000,5000,V.Local.sFormat,V.Local.sAlign,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	V.Local.sRet(3).Set(V.Local.sRet(3).Trim)
+	F.Intrinsic.Control.If(V.Screen.F_Edit_Field!txtEdit.Visible,=,True)
+		Gui.F_Edit_Field.txtEdit.Text(V.Local.sRet(3))
+	F.Intrinsic.Control.ElseIf(V.Screen.F_Edit_Field!mlttxtEdit.Visible,=,True)
+		Gui.F_Edit_Field.mlttxtEdit.Text(V.Local.sRet(3))
+	F.Intrinsic.Control.ElseIf(V.Screen.F_Edit_Field!dtpEdit.Visible,=,True)
+		F.Intrinsic.Control.If(V.Local.sRet(3).IsDate,=,True)
+			Gui.F_Edit_Field.dtpEdit.Value(V.Local.sRet(3))
+		F.Intrinsic.Control.Else
+			F.Intrinsic.UI.Msgbox("Invalid Date selected")
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.elseif(V.Screen.F_Edit_Field!frmAlpha.Visible,=,True)
+		F.Intrinsic.Control.If(V.Local.sRet(3).UCase,=,"Y")
+			Gui.F_Edit_Field.optYes.Value(1)
+		F.Intrinsic.Control.Else
+			Gui.F_Edit_Field.optNo.Value(1)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+Gui.F_Edit_Field..Enabled(True)
+
+program.sub.cmdentries_click.end
+
+Program.Sub.GetEntriesForField.Start
+V.Local.sQuery.Declare(String)
+V.Local.sPartString.Declare(String)
+V.Local.iFieldCols.Declare(String)
+V.Local.iFieldCols.Redim(-1,-1)
+V.Local.iUB.Declare(Long,-1)
+V.Local.bExists.Declare(Boolean)
+V.Local.iC.Declare(Long)
+V.Local.sTemp.Declare(String)
+V.Local.sTool.Declare(String)
+V.Local.sPartBuild.Declare(String)
+V.Local.sField.Declare(String)
+
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+F.Intrinsic.String.Concat("SELECT TOOL_ID,FIELD_ID FROM ATG_3131_TOOL_TYPE_L WHERE LABEL='",V.Args.sLabel,"' ORDER BY FIELD_ID ASC, TOOL_ID ASC",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRO("rstFields",V.Local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstFields.EOF,=,True)
+	V.Local.bExists.Set(False)
+	F.Intrinsic.Control.For(V.Local.iC,0,V.Local.iFieldCols.UBound,1)
+		F.Intrinsic.String.Split(V.Local.iFieldCols(v.Local.iC),"!*!",V.Local.sTemp)
+		F.Intrinsic.Control.If(V.Local.sTemp(0),=,V.ODBC.conx!rstFields.FieldValTrim!FIELD_ID)
+			V.Local.bExists.Set(True)
+			F.Intrinsic.String.Concat(V.Local.iFieldCols(v.Local.iC),",",V.ODBC.conx!rstFields.FieldValTrim!TOOL_ID,V.Local.iFieldCols(v.Local.iC))
+			F.Intrinsic.Control.ExitFor(V.Local.iC)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iC)
+
+	F.Intrinsic.Control.If(V.Local.bExists,=,False)
+		F.Intrinsic.Math.Add(V.Local.iFieldCols.UBound,1,V.Local.iUB)
+		F.Intrinsic.Control.If(V.Local.iUB,=,0)
+			V.Local.iFieldCols.Redim(0,0)
+		F.Intrinsic.Control.Else
+			V.Local.iFieldCols.RedimPreserve(0,V.Local.iUB)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Concat(V.ODBC.conx!rstFields.FieldValTrim!FIELD_ID,"!*!",V.ODBC.conx!rstFields.FieldValTrim!TOOL_ID,V.Local.iFieldCols(v.Local.iUB))
+	F.Intrinsic.Control.EndIf
+
+	F.ODBC.conx!rstFields.MoveNext
+F.Intrinsic.Control.loop
+F.Intrinsic.Debug.Stop
+F.ODBC.conx!rstFields.close
+
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+
+F.Intrinsic.Control.For(V.Local.iC,0,V.Local.iFieldCols.UBound,1)
+	F.Intrinsic.String.Split(V.Local.iFieldCols(v.Local.iC),"!*!",V.Local.sTemp)
+	F.Intrinsic.String.Concat("FIELD_",V.Local.sTemp(0),V.Local.sField)
+	F.Intrinsic.String.Concat("SELECT PART, LOC, TOOL_ID, ",V.Local.sField," FROM ATG_3131_TOOL_FIELDS WHERE TOOL_ID IN(",V.Local.sTemp(1),")",V.Local.sQuery)
+	F.ODBC.Connection!conx.OpenRecordsetRO("rstFields",V.Local.sQuery)
+	F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstFields.EOF,=,True)
+		F.Intrinsic.Hash.LookupByKey("htToolID",V.ODBC.conx!rstFields.FieldValTrim!TOOL_ID,True,V.Local.sTool)
+		F.Intrinsic.Control.If(V.ODBC.conx!rstFields.FieldValTrim![v.local.sField],<>,"")
+			F.Intrinsic.String.Concat(V.ODBC.conx!rstFields.FieldValTrim!Part,"*!*",V.ODBC.conx!rstFields.FieldValTrim!LOC,"*!*",V.Local.sTool,"*!*",V.ODBC.conx!rstFields.FieldValTrim![v.local.sField],V.Local.sPartBuild)
+			F.Intrinsic.Control.If(V.Local.sPartString,=,"")
+				V.Local.sPartString.Set(V.Local.sPartBuild)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Local.sPartString,"!*!",V.Local.sPartBuild,V.Local.sPartString)
+			F.Intrinsic.Control.EndIf
+'		F.Intrinsic.Control.Else
+'			F.Intrinsic.String.Concat(V.ODBC.conx!rstFields.FieldValTrim!Part,"*!*",V.ODBC.conx!rstFields.FieldValTrim!LOC,"*!*",V.Local.sTool,"*!*"," ",V.Local.sPartBuild)
+		F.Intrinsic.Control.EndIf
+		
+		F.Intrinsic.Debug.Stop
+		F.ODBC.conx!rstFields.MoveNext
+	F.Intrinsic.Control.Loop
+	F.ODBC.conx!rstFields.Close
+	F.Intrinsic.Debug.Stop
+F.Intrinsic.Control.Next(V.Local.iC)
+
+'F.Intrinsic.Debug.InvokeDebugger
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Debug.Stop
+F.Intrinsic.Variable.AddRV("sPartString",V.Local.sPartString)
+
+
+Program.Sub.GetEntriesForField.End
+
+Program.Sub.Hash.Start
+V.Local.sQuery.Declare(String)
+V.Local.sTemp.Declare(String)
+
+V.Local.sQuery.Set("SELECT * FROM ATG_3131_TOOL_TYPE_H")
+F.ODBC.Connection!conx.OpenRecordsetRO("rstHash",V.Local.sQuery)
+F.Intrinsic.Control.DoUntil(V.ODBC.conx!rstHash.EOF,=,True)
+	F.Intrinsic.Hash.AddItem("htToolID",V.ODBC.conx!rstHash.FieldValTrim!TOOL_ID,V.ODBC.conx!rstHash.FieldValTrim!TOOL_TYPE)
+	F.ODBC.conx!rstHash.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.conx!rstHash.Close
+
+
+
+Program.Sub.Hash.End
+
+
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM$}$False
+Program.Sub.Comments.End
